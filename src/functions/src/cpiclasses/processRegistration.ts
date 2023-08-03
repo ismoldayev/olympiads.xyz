@@ -1,9 +1,9 @@
 import * as checkoutNodeJssdk from '@paypal/checkout-server-sdk';
 import * as admin from 'firebase-admin';
 import * as functions from 'firebase-functions';
+import 'firebase-functions/lib/logger/compat';
 import * as payPalClient from './utils/payPalClient';
 import updateMailingList from './utils/updateMailingList';
-import 'firebase-functions/lib/logger/compat';
 
 if (admin.apps.length === 0) {
   admin.initializeApp();
@@ -68,7 +68,7 @@ export default functions.https.onCall(
       );
     }
     functions.logger.warn('start make join link');
-    // create bronze class join link
+    // create mechanics class join link
     const joinLinkRef = admin.firestore().collection('group-join-links').doc();
     await joinLinkRef.set({
       groupId: 'd7eYGfddXq3m2trXG2xt',
@@ -84,7 +84,7 @@ export default functions.https.onCall(
     const ref = admin
       .firestore()
       .collection('classes-registration')
-      .doc('usacobronze')
+      .doc('usacomechanics')
       .collection('registrations')
       .doc();
     functions.logger.warn('start update mailing list');

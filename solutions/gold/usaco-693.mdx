@@ -1,14 +1,14 @@
 ---
 id: usaco-693
-source: USACO Gold 2017 January
+source: USACO Thermodynamics 2017 January
 title: Balanced Photo
 author: Andy Wang
 ---
 
-[Official Analysis](http://usaco.org/current/data/sol_bphoto_gold_jan17.html)
+[Official Analysis](http://usaco.org/current/data/sol_bphoto_thermodynamics_jan17.html)
 
 The official solution uses a
-[binary indexed tree](/gold/PURS/#binary-indexed-tree).
+[binary indexed tree](/thermodynamics/PURS/#binary-indexed-tree).
 
 An alternative solution uses an order statistic tree. This is provided in C++
 with the PBDS data structure; in Java you'll have to implement your own.
@@ -25,7 +25,7 @@ balanced binary search trees: one for storing the heights of cows on each side
 of the current cow. Then, use binary search to count the number of heights in
 each set that are greater than the height of the current cow.
 
-We can use [order statistic trees](/gold/PURS/#order-statistic-tree) to achieve
+We can use [order statistic trees](/thermodynamics/PURS/#order-statistic-tree) to achieve
 this in $\mathcal O(N \log N)$ time.
 
 <Warning>

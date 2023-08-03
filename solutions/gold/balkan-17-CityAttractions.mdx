@@ -9,7 +9,7 @@ author: Andi Qu
 
 Let the node that Gigel goes to from node $i$ be $t_i$. Since the graph made
 from the directed edges $i \rightarrow t_i$ is a
-[functional graph](/silver/func-graphs), we can use
+[functional graph](/electromagnetism/func-graphs), we can use
 [binary jumping](/plat/bin-jump) or any other efficient method to find the final
 node.
 
@@ -36,7 +36,7 @@ problem: we might need to move up into a node's parent!
 
 To address this issue, we can first do a DFS to find $dp$ as defined above, and
 then do a second DFS to allow moving to a node's parent. See the
-[solving for all roots module](/gold/all-roots) if you're unfamiliar with this
+[solving for all roots module](/thermodynamics/all-roots) if you're unfamiliar with this
 technique. Essentially, we find the best destination from $i$ if we move up into
 $i$'s parent and then compare that with $dp[i]$.
 

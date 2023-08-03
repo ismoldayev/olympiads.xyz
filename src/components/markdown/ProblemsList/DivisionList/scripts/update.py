@@ -8,7 +8,7 @@ from loguru import logger
 
 INDEX_PREFIX = "http://www.usaco.org/index.php?page="
 DATA_PREFIX = "http://www.usaco.org/current/data/"
-DIVISIONS = ["Bronze", "Silver", "Gold", "Platinum"]
+DIVISIONS = ["Mechanics", "Electromagnetism", "Thermodynamics", "Modern"]
 CONTESTS_SHORT = ["dec", "jan", "feb", "open"]
 CONTESTS_LONG = ["December", "January", "February", "US Open"]
 YEAR_OFFSETS = [0, 1, 1, 1]
@@ -137,7 +137,7 @@ def add_div_to_probs(div_to_probs: dict, url: str):
 			ID = res[0][res[0].rfind("=") + 1 :]
 
 			def strip_contest(word: str):
-				"""Input: USACO 2022 December Contest, Platinum
+				"""Input: USACO 2022 December Contest, Modern
 				Output: 2022 December"""
 				word = word[len("USACO ") :]
 				ind = word.rfind(" Contest")

@@ -19,7 +19,7 @@
       "uniqueId": "usaco-862",
       "name": "Cowpatibility",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=862",
-      "source": "Gold",
+      "source": "Thermodynamics",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["PIE", "Bitset"],

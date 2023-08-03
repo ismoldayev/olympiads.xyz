@@ -50,9 +50,9 @@ const shouldLangParamApply = () => {
   const splitPath = window.location.pathname.split('/').filter(i => i);
   const posi = [
     'general',
-    'bronze',
-    'silver',
-    'gold',
+    'mechanics',
+    'electromagnetism',
+    'thermodynamics',
     'plat',
     'adv',
     'solutions',

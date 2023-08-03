@@ -28,7 +28,7 @@ description: 'Using a custom comparator to sort custom objects or values in a no
 <FocusProblem problem="sample" />
 
 We won't discuss the full solution here, as some of the concepts necessary for
-solving this problem will be introduced later in Silver. However, many solutions
+solving this problem will be introduced later in Electromagnetism. However, many solutions
 to this problem start by sorting the edges in nondecreasing order of weight. For
 example, the sample contains the following edges:
 
@@ -695,7 +695,7 @@ $N-1$, which _can_ be used as array indices.
 A good example of coordinate compression in action is in the solution of _USACO
 Rectangular Pasture._ Again, we won't delve into the full solution but instead
 discuss how coordinate compression is applied. Since the solution uses
-[2D-prefix](/silver/prefix-sums-2) sums (another Silver topic), it is helpful if
+[2D-prefix](/electromagnetism/prefix-sums-2) sums (another Electromagnetism topic), it is helpful if
 all point coordinates are coordinate-compressed to the range $0$ to $N-1$ so
 they can be used as array indices. Without coordinate compression, creating a large enough array would result in a `Memory Limit Exceeded` verdict.
 
@@ -847,7 +847,7 @@ implementation of coordinate compression and how it can switch between
 compressed indices and original values, see the contracted code below. `indices`
 is a list of values that need to be compressed. After it gets sorted and has
 duplicate values removed, it is ready to use. The method `getCompressedIndex`
-takes in an original value, and [binary searches](/silver/binary-search) for its
+takes in an original value, and [binary searches](/electromagnetism/binary-search) for its
 position in `indices` to get its corresponding compressed index. To go from a
 compressed index to an original value, the code can just access that index in
 `indices`.
@@ -899,7 +899,7 @@ conveniently use them as array indices for the difference array. We perform this
 coordinate compression by keeping a sorted list of all special indices, and
 using each special index's position in that list as its compressed index. To
 find a special index's position in the sorted list (a.k.a. its compressed
-index), we can [binary search](/silver/binary-search) on the list. The next part
+index), we can [binary search](/electromagnetism/binary-search) on the list. The next part
 of the solution will show why it was important for us to store the original
 indices.
 
@@ -1173,8 +1173,8 @@ public class rangequeries {
 
 <Info title="Pro Tip">
 
-Many of the problems below may use other Silver concepts, such as
-[prefix sums](/silver/prefix-sums).
+Many of the problems below may use other Electromagnetism concepts, such as
+[prefix sums](/electromagnetism/prefix-sums).
 
 </Info>
 

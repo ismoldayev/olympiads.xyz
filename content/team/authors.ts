@@ -51,7 +51,7 @@ export const Authors: Author[] = [
     name: 'Melody Yu',
     title: 'Executive',
     blurb:
-      'Melody Yu is a USACO Platinum competitor and founder of Project Starcoder.',
+      'Melody Yu is a USACO Modern competitor and founder of Project Starcoder.',
     github: 'cskitty',
     website: 'https://melodyyu.com',
     email: 'ocmelodyyu@gmail.com',
@@ -62,7 +62,7 @@ export const Authors: Author[] = [
     name: 'Andrew Wang',
     title: 'Core Team',
     blurb:
-      'Andrew Wang is a USACO Platinum competitor and a researcher in the field of bioinformatics.',
+      'Andrew Wang is a USACO Modern competitor and a researcher in the field of bioinformatics.',
     codeforces: 'a.wang',
     github: 'andrewwangva',
     email: 'andrewwangva.biz@gmail.com',
@@ -78,8 +78,7 @@ export const Authors: Author[] = [
     photo: 'michael',
     name: 'Michael Cao',
     title: 'Core Team',
-    blurb:
-      'Michael Cao is a USACO Platinum competitor and USACO problemsetter.',
+    blurb: 'Michael Cao is a USACO Modern competitor and USACO problemsetter.',
     codeforces: 'caoash',
     email: 'caoash@gmail.com',
     github: 'caoash',
@@ -88,7 +87,7 @@ export const Authors: Author[] = [
     photo: 'darren',
     name: 'Darren Yao',
     title: 'Co-Founder',
-    blurb: 'Darren Yao is a USACO Platinum competitor.',
+    blurb: 'Darren Yao is a USACO Modern competitor.',
     website: 'http://darrenyao.com/',
     email: 'darren.yao@gmail.com',
     github: 'darren-yao',
@@ -98,7 +97,7 @@ export const Authors: Author[] = [
     name: 'Siyong Huang',
     title: 'Co-Founder',
     blurb:
-      'Siyong Huang is an IOI gold medalist and three-time USACO Finalist.',
+      'Siyong Huang is an IOI thermodynamics medalist and three-time USACO Finalist.',
     codeforces: 'frodakcin',
     github: 'frodakcin',
   },
@@ -117,7 +116,7 @@ export const Authors: Author[] = [
     name: 'Andi Qu',
     title: 'Co-Founder',
     blurb:
-      'Andi Qu is an IOI and IMO bronze medalist, and part of the MIT Class of 2025.',
+      'Andi Qu is an IOI and IMO mechanics medalist, and part of the MIT Class of 2025.',
     codeforces: 'dolphingarlic',
     github: 'dolphingarlic',
     email: 'andi@andiqu.com',
@@ -128,7 +127,7 @@ export const Authors: Author[] = [
     name: 'Bing-Dong Liu',
     title: 'Content Manager',
     blurb:
-      'Bing-Dong Liu is a USACO Platinum competitor who creates video editorials for USACO Training problems.',
+      'Bing-Dong Liu is a USACO Modern competitor who creates video editorials for USACO Training problems.',
     codeforces: 'lunchbox',
     github: 'dongliu0426',
     email: 'dongliu0426@gmail.com',

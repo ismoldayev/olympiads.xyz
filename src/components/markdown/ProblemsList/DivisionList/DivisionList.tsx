@@ -13,7 +13,7 @@ import idToSol from './id_to_sol.json';
 const startYear = 2016;
 const endYear = 2023; // manually increment this for a new season
 const allYears = `All (${startYear - 1} - ${endYear})`;
-const divisions = ['Bronze', 'Silver', 'Gold', 'Platinum'];
+const divisions = ['Mechanics', 'Electromagnetism', 'Thermodynamics', 'Modern'];
 
 const getSeasons = () => {
   const res = [];
@@ -27,10 +27,10 @@ const getSeasons = () => {
 const seasons = getSeasons();
 
 const color: { [key: string]: string } = {
-  Bronze: 'bg-red-800',
-  Silver: 'bg-gray-300',
-  Gold: 'bg-yellow-300',
-  Platinum: 'bg-gray-300', // whoops plat looks basically the same as silver on the website
+  Mechanics: 'bg-red-800',
+  Electromagnetism: 'bg-gray-300',
+  Thermodynamics: 'bg-yellow-300',
+  Modern: 'bg-gray-300', // whoops plat looks basically the same as electromagnetism on the website
 };
 
 const getCircle = option => {
@@ -155,7 +155,11 @@ export function DivisionList(props): JSX.Element {
   const data = useStaticQuery(graphql`
     query {
       allProblemInfo(
-        filter: { source: { in: ["Bronze", "Silver", "Gold", "Plat"] } }
+        filter: {
+          source: {
+            in: ["Mechanics", "Electromagnetism", "Thermodynamics", "Plat"]
+          }
+        }
       ) {
         edges {
           node {

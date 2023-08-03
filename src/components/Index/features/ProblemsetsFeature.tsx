@@ -92,13 +92,13 @@ export const ProblemsetsFeature = (): JSX.Element => {
                       difficulty="Easy"
                     />
                     <TableRow
-                      source="USACO Gold"
+                      source="USACO Thermodynamics"
                       title="Closing the Farm"
                       difficulty="Easy"
                       className="bg-gray-50 dark:bg-gray-900"
                     />
                     <TableRow
-                      source="USACO Gold"
+                      source="USACO Thermodynamics"
                       title="Mootube"
                       difficulty="Normal"
                       starred

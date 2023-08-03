@@ -55,7 +55,7 @@
       "uniqueId": "usaco-814",
       "name": "Directory Traversal",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=814",
-      "source": "Gold",
+      "source": "Thermodynamics",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["DP", "Tree"],

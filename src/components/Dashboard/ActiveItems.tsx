@@ -57,13 +57,13 @@ export default function ActiveItems({
       // put active USACO problems first
       const secs = [
         'General',
-        'Bronze',
-        'Old Bronze',
-        'Silver',
-        'Old Silver',
-        'Gold',
-        'Old Gold',
-        'Platinum',
+        'Mechanics',
+        'Old Mechanics',
+        'Electromagnetism',
+        'Old Electromagnetism',
+        'Thermodynamics',
+        'Old Thermodynamics',
+        'Modern',
         'Advanced',
       ];
       for (let i = 0; i < secs.length; ++i) if (x.startsWith(secs[i])) return i;

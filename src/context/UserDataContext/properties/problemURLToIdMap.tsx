@@ -782,7 +782,7 @@ export default {
   'https://szkopul.edu.pl/problemset/problem/k9UKIj11V6iPRc3LaiYQYHyi/site/?key=statement':
     'poi-06-PeriodsOfWords',
   'https://oj.uz/problem/view/BOI19_necklace4': 'baltic-19-necklace',
-  'http://poj.org/problem?id=3167': 'poj-USACOGold05CowPatterns',
+  'http://poj.org/problem?id=3167': 'poj-USACOThermodynamics05CowPatterns',
   'https://szkopul.edu.pl/problemset/problem/PT4yHRX9Mmz85ndhNPGCi_WB/site/':
     'poi-05-template',
   'https://szkopul.edu.pl/problemset/problem/6b-q_dPI_KRHD3VArapVq7EP/site/':
@@ -887,7 +887,7 @@ export default {
   'http://www.usaco.org/index.php?page=viewproblem2&cpid=1015': 'usaco-1015',
   'http://www.usaco.org/index.php?page=viewproblem2&cpid=834': 'usaco-834',
   'http://www.usaco.org/index.php?page=viewproblem2&cpid=967': 'usaco-967',
-  'https://dmoj.ca/problem/apio17p1': 'dmoj-LandOfTheRainbowGold',
+  'https://dmoj.ca/problem/apio17p1': 'dmoj-LandOfTheRainbowThermodynamics',
   'https://utipc20s.kattis.com/problems/utipc20s.islandarchipelago':
     'kattis-IslandArchipelago',
   'https://codeforces.com/contest/1392/problem/I': 'cf-1392I',

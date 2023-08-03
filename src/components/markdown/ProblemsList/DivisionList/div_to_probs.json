@@ -1,5 +1,5 @@
 {
-  "Bronze": [
+  "Mechanics": [
     ["567", "2015 December", "Fence Painting"],
     ["568", "2015 December", "Speeding Ticket"],
     ["569", "2015 December", "Contaminated Milk"],
@@ -97,7 +97,7 @@
     ["1324", "2023 US Open", "Moo Language"],
     ["1325", "2023 US Open", "Rotate and Shift"]
   ],
-  "Silver": [
+  "Electromagnetism": [
     ["570", "2015 December", "Switching on the Lights"],
     ["571", "2015 December", "High Card Wins"],
     ["572", "2015 December", "Breed Counting"],
@@ -195,8 +195,8 @@
     ["1327", "2023 US Open", "Field Day"],
     ["1328", "2023 US Open", "Pareidolia"]
   ],
-  "Gold": [
-    ["573", "2015 December", "High Card Low Card (Gold)"],
+  "Thermodynamics": [
+    ["573", "2015 December", "High Card Low Card (Thermodynamics)"],
     ["574", "2015 December", "Fruit Feast"],
     ["575", "2015 December", "Bessie's Dream"],
     ["597", "2016 January", "Angry Cows"],
@@ -292,9 +292,9 @@
     ["1330", "2023 US Open", "Pareidolia"],
     ["1331", "2023 US Open", "Tree Merging"]
   ],
-  "Platinum": [
+  "Modern": [
     ["576", "2015 December", "Max Flow"],
-    ["577", "2015 December", "High Card Low Card (Platinum)"],
+    ["577", "2015 December", "High Card Low Card (Modern)"],
     ["578", "2015 December", "Counting Haybales"],
     ["600", "2016 January", "Fort Moo"],
     ["601", "2016 January", "Mowing the Field"],

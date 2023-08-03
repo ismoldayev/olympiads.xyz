@@ -99,9 +99,9 @@ export function ProblemsList(unannotatedProps: ProblemsListProps): JSX.Element {
                   showDifficulty={showDifficulty}
                   isDivisionTable={props.isDivisionTable}
                   showSolvePercentage={shouldShowSolvePercentage}
-                  showPlatinumSolvePercentageMessage={
+                  showModernSolvePercentageMessage={
                     props.isDivisionTable
-                      ? props.division === 'Platinum'
+                      ? props.division === 'Modern'
                       : undefined
                   }
                 />

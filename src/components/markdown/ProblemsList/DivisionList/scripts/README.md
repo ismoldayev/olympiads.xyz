@@ -7,9 +7,9 @@ For updating https://usaco.guide/general/usaco-monthlies after a USACO contest.
 - `id_to_sol.json`: USACO problem ID -> solution URL
 - `div_to_probs.json`: USACO division -> list[problem id, contest, problem name]
 - `contest_to_points.json`: For each problem in a contest, the proportion of
-  test cases passed by all promoters for Bronze - Gold, or the top 10 US
-  pre-college contestants for Platinum. Note that recent contests only have this
-  info for Gold and Platinum.
+  test cases passed by all promoters for Mechanics - Thermodynamics, or the top
+  10 US pre-college contestants for Modern. Note that recent contests only have
+  this info for Thermodynamics and Modern.
 
 ## Requirements
 

@@ -8,13 +8,13 @@ author: Shreyas Thumathy, Benjamin Qi, Nathan Gong
 ## Explanation
 
 The first step is the same as that of
-[Movie Festival](/silver/greedy-sorting#example---the-scheduling-problem); sort
+[Movie Festival](/electromagnetism/greedy-sorting#example---the-scheduling-problem); sort
 the movies in increasing order of end time. For each movie in order, we will
 assign it to one of the $k$ members to watch (or none of them).
 
 Keep track of the time each member finishes watching all of his currently
 assigned movies in an ordered multiset
-([represented](/silver/intro-sorted-sets/#multisets) by
+([represented](/electromagnetism/intro-sorted-sets/#multisets) by
 a `TreeMap` in Java or a `multiset` in C++). Initially, the collection consists of $k$ zeroes.
 
 For each movie in order, we can assign a member to watch it if there exists an

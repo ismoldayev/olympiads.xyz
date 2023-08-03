@@ -11,9 +11,9 @@ import {
 
 const problemSuggestionReviewers = {
   general: [],
-  bronze: [],
-  silver: [],
-  gold: [],
+  mechanics: [],
+  electromagnetism: [],
+  thermodynamics: [],
   plat: [],
   adv: [],
 };

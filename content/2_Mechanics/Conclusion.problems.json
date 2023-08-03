@@ -1,5 +1,5 @@
 {
-  "MODULE_ID": "bronze-conclusion",
+  "MODULE_ID": "mechanics-conclusion",
   "problems": [
     {
       "uniqueId": "cf-1846D",
@@ -18,7 +18,7 @@
       "uniqueId": "usaco-642",
       "name": "Field Reduction",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=642",
-      "source": "Silver",
+      "source": "Electromagnetism",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["Geometry"],
@@ -44,7 +44,7 @@
       "uniqueId": "usaco-509",
       "name": "It's All About the Base",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=509",
-      "source": "Old Bronze",
+      "source": "Old Mechanics",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": [],
@@ -57,7 +57,7 @@
       "uniqueId": "usaco-1181",
       "name": "Drought",
       "url": "http://usaco.org/index.php?page=viewproblem2&cpid=1181",
-      "source": "Bronze",
+      "source": "Mechanics",
       "difficulty": "Hard",
       "isStarred": false,
       "tags": ["Greedy"],

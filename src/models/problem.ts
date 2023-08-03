@@ -4,19 +4,24 @@ import PGS from '../components/markdown/PGS';
 import id_to_sol from '../components/markdown/ProblemsList/DivisionList/id_to_sol.json';
 import { books } from '../utils/books';
 
-export const recentUsaco = ['Bronze', 'Silver', 'Gold', 'Plat'];
+export const recentUsaco = [
+  'Mechanics',
+  'Electromagnetism',
+  'Thermodynamics',
+  'Plat',
+];
 
 // abbreviation -> [URL, description or full name, instructions to view solutions]
 export const probSources = {
-  Bronze: [
+  Mechanics: [
     'http://www.usaco.org/index.php?page=viewproblem2&cpid=',
     'USACO 2015-16 to present',
   ],
-  Silver: [
+  Electromagnetism: [
     'http://www.usaco.org/index.php?page=viewproblem2&cpid=',
     'USACO 2015-16 to present',
   ],
-  Gold: [
+  Thermodynamics: [
     'http://www.usaco.org/index.php?page=viewproblem2&cpid=',
     'USACO 2015-16 to present',
   ],
@@ -24,17 +29,17 @@ export const probSources = {
     'http://www.usaco.org/index.php?page=viewproblem2&cpid=',
     'USACO 2015-16 to present',
   ],
-  'Old Bronze': [
+  'Old Mechanics': [
     'http://www.usaco.org/index.php?page=viewproblem2&cpid=',
-    'USACO Platinum did not exist prior to 2015-16.',
+    'USACO Modern did not exist prior to 2015-16.',
   ],
-  'Old Silver': [
+  'Old Electromagnetism': [
     'http://www.usaco.org/index.php?page=viewproblem2&cpid=',
-    'USACO Platinum did not exist prior to 2015-16.',
+    'USACO Modern did not exist prior to 2015-16.',
   ],
-  'Old Gold': [
+  'Old Thermodynamics': [
     'http://www.usaco.org/index.php?page=viewproblem2&cpid=',
-    'USACO Platinum did not exist prior to 2015-16.',
+    'USACO Modern did not exist prior to 2015-16.',
   ],
   AC: [
     'https://atcoder.jp/',
@@ -206,7 +211,7 @@ export type ProblemSolutionMetadata =
     }
   | {
       // USACO solution, generates it based off of the USACO problem ID
-      // ex. 1113 is mapped to sol_prob1_gold_feb21.html
+      // ex. 1113 is mapped to sol_prob1_thermodynamics_feb21.html
       kind: 'USACO';
       usacoId: string;
     }

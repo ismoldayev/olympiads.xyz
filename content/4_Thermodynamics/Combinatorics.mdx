@@ -150,7 +150,7 @@ def binomial(n: int, k: int, p: int) -> int:
 </LanguageSection>
 
 Additionally, we can optimize this from $\mathcal{O}(2^n)$ to $\mathcal{O}(n^2)$
-using [dynamic programming](/gold/intro-dp) (DP) by caching the values of
+using [dynamic programming](/thermodynamics/intro-dp) (DP) by caching the values of
 smaller binomials to prevent recalculating the same values over and over again.
 The code below shows a bottom-up implementation of this.
 
@@ -289,7 +289,7 @@ not matter, so the result is divided by $k!$ and $(n − k)!$.
 
 Since these binomial coefficients are large, problems typically require us to
 output the answer modulo a large prime $p$ such as $10^9 + 7$. Fortunately, we
-can use [modular inverses](/gold/modular) to divide $n!$ by $k!$ and $(n - k)!$
+can use [modular inverses](/thermodynamics/modular) to divide $n!$ by $k!$ and $(n - k)!$
 modulo $p$ for any prime $p$. Computing inverse factorials **online** can be
 very time costly. Instead, we can **precompute** all factorials in
 $\mathcal{O}(n)$ time and inverse factorials in $\mathcal{O}(n + \log MOD)$.

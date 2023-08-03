@@ -1,11 +1,11 @@
 ---
 id: usaco-973
-source: USACO Platinum 2016 December
+source: USACO Modern 2016 December
 title: Bessie's Snow Cow
 author: Kevin Sheng
 ---
 
-[Official Analysis (C++)](http://usaco.org/current/data/sol_snowcow_platinum_dec19.html)
+[Official Analysis (C++)](http://usaco.org/current/data/sol_snowcow_modern_dec19.html)
 
 ## Explanation
 
@@ -30,7 +30,7 @@ The first two problems are solvable with our Euler tour arrays.
 For each color, we create a sorted map with the keys being $\texttt{start}[x]$ and the values
 being $x$, where $x$ represents a snowball.
 When we add a new snowball, we can use the map's
-[lower key and upper key functions](/silver/intro-sorted-sets#sorted-maps) to efficiently
+[lower key and upper key functions](/electromagnetism/intro-sorted-sets#sorted-maps) to efficiently
 remove any children or detect a parent.
 
 ### Issue 3

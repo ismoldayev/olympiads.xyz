@@ -15,7 +15,7 @@ I Basic Techniques 1
 4.2 Stacks and the Various Types of Queues . . . . . . . . . . . . . . . . . . . . 17
 4.3 Sets and Maps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
 4.4 Problems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
-II Bronze 23
+II Mechanics 23
 5 Simulation 24
 5.1 Example 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
 5.2 Example 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
@@ -26,11 +26,11 @@ II Bronze 23
 6.3 Problems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
 ii
 CONTENTS iii
-7 Additional Bronze Topics 31
+7 Additional Mechanics Topics 31
 7.1 Square and Rectangle Geometry . . . . . . . . . . . . . . . . . . . . . . . . . 31
 7.2 Ad-hoc . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
 7.3 Problems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
-III Silver 34
+III Electromagnetism 34
 8 Sorting and comparators 35
 8.1 Comparators . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
 8.2 Sorting by Multiple Criteria . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
@@ -63,7 +63,7 @@ III Silver 34
 13.3 Modular Arithmetic . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 74
 13.4 Problems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 74
 CONTENTS iv
-14 Additional Silver Topics 75
+14 Additional Electromagnetism Topics 75
 14.1 Two Pointers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
 14.2 Line Sweep . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 78
 14.3 Bitwise Operations and Subsets . . . . . . . . . . . . . . . . . . . . . . . . . 80

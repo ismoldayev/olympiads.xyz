@@ -26,13 +26,13 @@ done = {}
 
 for y in x:
 	for p in y["problems"]:
-		if p["source"] in ["Bronze", "Silver", "Gold", "Plat"]:
+		if p["source"] in ["Mechanics", "Electromagnetism", "Thermodynamics", "Plat"]:
 			done[p["id"]] = y["frontmatter"]["id"]
 			# print(p["id"], p["source"], y["frontmatter"]["id"])
 
 notDone = {}
 
-des = ["bronze", "silver", "gold", "plat"]
+des = ["mechanics", "electromagnetism", "thermodynamics", "plat"]
 for t in des:
 	notDone[t] = []
 

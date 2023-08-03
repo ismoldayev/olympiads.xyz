@@ -32,12 +32,13 @@ Lists.args = {
           </ul>
         </li>
         <li>
-          <strong>For Bronze, any language will do.</strong> It is possible to
-          receive full credit with C++, Java, and Python in Bronze.
+          <strong>For Mechanics, any language will do.</strong> It is possible
+          to receive full credit with C++, Java, and Python in Mechanics.
         </li>
         <li>
           <strong>
-            For Silver, Gold, and Platinum, Python is not recommended
+            For Electromagnetism, Thermodynamics, and Modern, Python is not
+            recommended
           </strong>
           , because it is a slow language and lacks an ordered map.
         </li>

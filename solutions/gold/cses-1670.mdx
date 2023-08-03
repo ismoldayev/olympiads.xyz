@@ -14,7 +14,7 @@ configuration.
 The difficulty of this problem is with how we choose to implement the BFS. We present
 two solutions with the first being faster and the second being easier to write
 (note that the second solution may TLE). The differences lies with how the grid is
-[hashed](/gold/string-hashing).
+[hashed](/thermodynamics/string-hashing).
 
 <Spoiler title="Solution 1">
 ## Explanation
@@ -125,7 +125,7 @@ We then perform BFS normally but with a few notable changes.
 2. We also store the strings (board configurations) already seen inside an **unordered_set**, as using normal (ordered) sets would be too slow.
 
 <Info title="Significance of using unordered set">
-As we will learn in the [hashing module](/gold/hashmaps), unordered set does searches and insertions in constant time despite a large constant factor while a normal set does this in $\mathcal{O}(\log n)$. Since we are dealing with up to $9!$ terms, it is necessary to use an unordered set.
+As we will learn in the [hashing module](/thermodynamics/hashmaps), unordered set does searches and insertions in constant time despite a large constant factor while a normal set does this in $\mathcal{O}(\log n)$. Since we are dealing with up to $9!$ terms, it is necessary to use an unordered set.
 </Info>
 
 ## Implementation

@@ -1,5 +1,5 @@
 {
-  "MODULE_ID": "silver-conclusion",
+  "MODULE_ID": "electromagnetism-conclusion",
   "problems": [
     {
       "uniqueId": "cses-1650",
@@ -91,7 +91,7 @@
       "uniqueId": "usaco-1255",
       "name": "Circular Barn - The Game",
       "url": "http://usaco.org/index.php?page=viewproblem2&cpid=1255",
-      "source": "Silver",
+      "source": "Electromagnetism",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["Games", "Number Theory"],
@@ -104,7 +104,7 @@
       "uniqueId": "usaco-419",
       "name": "Sabotage",
       "url": "http://usaco.org/index.php?page=viewproblem2&cpid=419",
-      "source": "Gold",
+      "source": "Thermodynamics",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["Binary Search"],

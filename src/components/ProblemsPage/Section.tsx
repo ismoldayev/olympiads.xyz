@@ -5,10 +5,10 @@ import { useDarkMode } from '../../context/DarkModeContext';
 
 const items = [
   { label: 'General', value: SECTIONS.general },
-  { label: 'Bronze', value: SECTIONS.bronze },
-  { label: 'Silver', value: SECTIONS.silver },
-  { label: 'Gold', value: SECTIONS.gold },
-  { label: 'Platinum', value: SECTIONS.plat },
+  { label: 'Mechanics', value: SECTIONS.mechanics },
+  { label: 'Electromagnetism', value: SECTIONS.electromagnetism },
+  { label: 'Thermodynamics', value: SECTIONS.thermodynamics },
+  { label: 'Modern', value: SECTIONS.plat },
   { label: 'Advanced', value: SECTIONS.adv },
 ];
 export default function Section({ refine }) {

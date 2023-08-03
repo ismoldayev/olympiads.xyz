@@ -1,7 +1,7 @@
 import * as admin from 'firebase-admin';
 import * as functions from 'firebase-functions';
-import updateMailingList from './utils/updateMailingList';
 import { classRegistrationAdministrators } from './utils/permissions';
+import updateMailingList from './utils/updateMailingList';
 
 if (admin.apps.length === 0) {
   admin.initializeApp();
@@ -22,7 +22,7 @@ export default functions.https.onCall(
       );
     }
 
-    // create bronze class join link
+    // create mechanics class join link
     const joinLinkRef = admin.firestore().collection('group-join-links').doc();
     await joinLinkRef.set({
       groupId: 'd7eYGfddXq3m2trXG2xt',
@@ -49,7 +49,7 @@ export default functions.https.onCall(
       admin
         .firestore()
         .collection('classes-registration')
-        .doc('usacobronze')
+        .doc('usacomechanics')
         .collection('registrations')
         .doc(registrationId)
         .update({

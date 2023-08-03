@@ -188,7 +188,7 @@
       "uniqueId": "usaco-213",
       "name": "Running Away From the Barn",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=213",
-      "source": "Old Gold",
+      "source": "Old Thermodynamics",
       "difficulty": "Normal",
       "isStarred": false,
       "tags": ["Small to Large", "Binary Jumping", "Euler Tour"],

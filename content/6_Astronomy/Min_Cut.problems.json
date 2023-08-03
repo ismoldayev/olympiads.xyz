@@ -45,7 +45,7 @@
       "uniqueId": "usaco-93",
       "name": "Cow Steeplechase",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=93",
-      "source": "Old Gold",
+      "source": "Old Thermodynamics",
       "difficulty": "Easy",
       "isStarred": false,
       "tags": ["Max Flow"],

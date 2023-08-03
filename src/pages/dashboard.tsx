@@ -58,7 +58,12 @@ export default function DashboardPage(props: PageProps) {
     }, {});
 
     // 2. problems in USACO monthly table
-    const divisions = ['Bronze', 'Silver', 'Gold', 'Platinum'];
+    const divisions = [
+      'Mechanics',
+      'Electromagnetism',
+      'Thermodynamics',
+      'Modern',
+    ];
     for (const division of divisions) {
       for (const probInfo of divToProbs[division]) {
         const id = `usaco-${probInfo[0]}`;
@@ -277,9 +282,9 @@ export default function DashboardPage(props: PageProps) {
                 {/*    </div>*/}
                 {/*    <div className="mt-4">*/}
                 {/*      <SectionProgressBar title="Intro" />*/}
-                {/*      <SectionProgressBar title="Bronze" />*/}
-                {/*      <SectionProgressBar title="Silver" />*/}
-                {/*      <SectionProgressBar title="Gold" />*/}
+                {/*      <SectionProgressBar title="Mechanics" />*/}
+                {/*      <SectionProgressBar title="Electromagnetism" />*/}
+                {/*      <SectionProgressBar title="Thermodynamics" />*/}
                 {/*      <SectionProgressBar title="Plat" />*/}
                 {/*      <SectionProgressBar title="Advanced" />*/}
                 {/*    </div>*/}

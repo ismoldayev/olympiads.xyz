@@ -2,8 +2,8 @@
 
 # USACO Guide
 
-A free collection of curated, high-quality resources to take you from Bronze to
-Platinum and beyond.
+A free collection of curated, high-quality resources to take you from Mechanics
+to Modern and beyond.
 
 Thank you to the following companies:
 

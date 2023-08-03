@@ -27,7 +27,7 @@ Remember that since the XOR of two numbers can never grow more than their sum, i
 
 Now, we can simply binary search on the length and check if there exists a subsegment of that length that has a cost equal to $f(1, n)$. Unfortunately, this is still too slow since calculating costs takes linear time.
 
-To fix this, we need some method of calculating range sums and range XORs in constant time. This is where [prefix sums](/silver/prefix-sums) and prefix XORs come in!
+To fix this, we need some method of calculating range sums and range XORs in constant time. This is where [prefix sums](/electromagnetism/prefix-sums) and prefix XORs come in!
 Since XOR and addition are associative and have [identity elements](https://en.wikipedia.org/wiki/Identity_element), we can use the same concept with them! If we let $p_i = a_1 \oplus a_2 \oplus \dots \oplus a_i$, then we can calculate the XOR of the range $[l, r]$ as $p_r \oplus p_{l - 1}$.
 
 

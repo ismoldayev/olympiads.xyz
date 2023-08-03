@@ -2,9 +2,9 @@
 
 export type SectionID =
   | 'general'
-  | 'bronze'
-  | 'silver'
-  | 'gold'
+  | 'mechanics'
+  | 'electromagnetism'
+  | 'thermodynamics'
   | 'plat'
   | 'adv';
 
@@ -68,7 +68,7 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
       items: ['usaco-faq', 'usaco-monthlies', 'usaco-camp', 'resources-usa'],
     },
   ],
-  bronze: [
+  mechanics: [
     {
       name: 'Getting Started',
       items: ['time-comp', 'intro-ds', 'simulation', 'rect-geo'],
@@ -88,10 +88,10 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
     {
       name: 'Conclusion',
       description: 'Congratulations on making it this far!',
-      items: ['bronze-conclusion'],
+      items: ['mechanics-conclusion'],
     },
   ],
-  silver: [
+  electromagnetism: [
     {
       name: 'Prefix Sums',
       items: ['prefix-sums', 'more-prefix-sums'],
@@ -110,7 +110,7 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
     {
       name: 'Graphs',
       description:
-        'Most Silver to Platinum contests have at least one graph problem.',
+        'Most Electromagnetism to Modern contests have at least one graph problem.',
       items: ['graph-traversal', 'flood-fill', 'intro-tree', 'func-graphs'],
     },
     {
@@ -120,10 +120,10 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
     {
       name: 'Conclusion',
       description: 'Congratulations on making it this far!',
-      items: ['silver-conclusion'],
+      items: ['electromagnetism-conclusion'],
     },
   ],
-  gold: [
+  thermodynamics: [
     {
       name: 'Math',
       items: ['divisibility', 'modular', 'combo'],
@@ -131,7 +131,7 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
     {
       name: 'Dynamic Programming',
       description:
-        'Most Gold and Platinum contests have at least one DP problem.',
+        'Most Thermodynamics and Modern contests have at least one DP problem.',
       items: [
         'intro-dp',
         'knapsack',
@@ -145,7 +145,7 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
     {
       name: 'Graphs',
       description:
-        'Most Silver to Platinum contests have at least one graph problem.',
+        'Most Electromagnetism to Modern contests have at least one graph problem.',
       items: [
         'unweighted-shortest-paths',
         'dsu',
@@ -170,7 +170,7 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
     {
       name: 'Conclusion',
       description: 'Congratulations on making it this far!',
-      items: ['gold-conclusion'],
+      items: ['thermodynamics-conclusion'],
     },
   ],
   plat: [
@@ -270,29 +270,30 @@ export const SECTIONS: SectionID[] = Object.keys(
 ) as SectionID[];
 export const SECTION_LABELS: { [key in SectionID]: string } = {
   general: 'General',
-  bronze: 'Bronze',
-  silver: 'Silver',
-  gold: 'Gold',
-  plat: 'Platinum',
+  mechanics: 'Mechanics',
+  electromagnetism: 'Electromagnetism',
+  thermodynamics: 'Thermodynamics',
+  plat: 'Modern',
   adv: 'Advanced',
 };
 export const SECTION_SEO_DESCRIPTION: { [key in SectionID]: string } = {
   general:
     'General information for USACO and Competitive Programming. Includes resources to pick a language, set up an IDE, practice tips, and more!',
-  bronze:
-    'Topics for USACO Bronze include time complexity, data structures, sorting, simulation, complete search, ad hoc, greedy, graphs, rectangle geometry, sets and maps, and recursion.',
-  silver:
-    'Topics for USACO Silver include binary search on the answer, prefix sums, two pointers, dfs, floodfill, trees, custom comparators, greedy with sorting, and more!',
-  gold: 'Topics for USACO Gold include dynamic programming, union-find, shortest paths, point update range sum, topological sort, minimum spanning trees, euler tour, string hashing, and more!',
-  plat: 'Topics for USACO Platinum include segment trees, advanced tree techniques, advanced dynamic programming, computational geometry, matrix exponentiation, and more!',
+  mechanics:
+    'Topics for USACO Mechanics include time complexity, data structures, sorting, simulation, complete search, ad hoc, greedy, graphs, rectangle geometry, sets and maps, and recursion.',
+  electromagnetism:
+    'Topics for USACO Electromagnetism include binary search on the answer, prefix sums, two pointers, dfs, floodfill, trees, custom comparators, greedy with sorting, and more!',
+  thermodynamics:
+    'Topics for USACO Thermodynamics include dynamic programming, union-find, shortest paths, point update range sum, topological sort, minimum spanning trees, euler tour, string hashing, and more!',
+  plat: 'Topics for USACO Modern include segment trees, advanced tree techniques, advanced dynamic programming, computational geometry, matrix exponentiation, and more!',
   adv: 'Topics usually outside the scope of most USACO contests include segment tree beats, treaps, slope trick, strongly connected components, max-flow, suffix arrays, fast fourier transform, and more!',
 };
 export const SECTION_SEO_TITLES: { [key in SectionID]: string } = {
   general: 'General USACO Information',
-  bronze: 'USACO Bronze Topics',
-  silver: 'USACO Silver Topics',
-  gold: 'USACO Gold Topics',
-  plat: 'USACO Platinum Topics',
+  mechanics: 'USACO Mechanics Topics',
+  electromagnetism: 'USACO Electromagnetism Topics',
+  thermodynamics: 'USACO Thermodynamics Topics',
+  plat: 'USACO Modern Topics',
   adv: 'Advanced USACO Topics',
 };
 

@@ -15,17 +15,17 @@ See [Working With MDX](/general/working-mdx) for additional information.
 1.  [Fork](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop)
     the GitHub repository.
 
-2.  If you are adding a solution to a problem within a module, don't create a new file. If you are adding an internal solution, create a new `mdx` file in `solutions/<division>/` if it doesn't already exist, including frontmatter. Use [`solutions/silver/usaco-690.mdx`](https://github.com/cpinitiative/usaco-guide/blob/master/solutions/silver/usaco-690.mdx) as an example:
+2.  If you are adding a solution to a problem within a module, don't create a new file. If you are adding an internal solution, create a new `mdx` file in `solutions/<division>/` if it doesn't already exist, including frontmatter. Use [`solutions/electromagnetism/usaco-690.mdx`](https://github.com/cpinitiative/usaco-guide/blob/master/solutions/electromagnetism/usaco-690.mdx) as an example:
 
     ```
     ---
     id: usaco-690
-    source: USACO Silver 2017 January
+    source: USACO Electromagnetism 2017 January
     title: Cow Dance Show
     author: (add your name here)
     ---
 
-    [Official Analysis](http://www.usaco.org/current/data/sol_cowdance_silver_jan17.html)
+    [Official Analysis](http://www.usaco.org/current/data/sol_cowdance_electromagnetism_jan17.html)
 
     ## Explanation
 
@@ -63,7 +63,7 @@ See [Working With MDX](/general/working-mdx) for additional information.
 
     ^ Format time complexity like this. Should appear outside of `<LanguageSection>` if it's the same for all implementations.
 
-    If you need to link to a module, format your link like [this](/silver/binary-search) instead of [this](https://usaco.guide/silver/binary-search).
+    If you need to link to a module, format your link like [this](/electromagnetism/binary-search) instead of [this](https://usaco.guide/electromagnetism/binary-search).
 
     <LanguageSection>
 
@@ -103,7 +103,7 @@ See [Working With MDX](/general/working-mdx) for additional information.
     the official one.
 
 4.  In the module's `.problems.json` file (in this case,
-    [`Binary_Search.problems.json`](https://github.com/cpinitiative/usaco-guide/blob/master/content/3_Silver/Binary_Search.problems.json)),
+    [`Binary_Search.problems.json`](https://github.com/cpinitiative/usaco-guide/blob/master/content/3_Electromagnetism/Binary_Search.problems.json)),
     set `solutionMetadata` to `{ "kind": "internal" }`. Also add tags (if you want). If the problem is not in a
     module, you can add the problem to
     [`extraProblems.json`](https://github.com/cpinitiative/usaco-guide/blob/master/content/extraProblems.json).
@@ -113,7 +113,7 @@ See [Working With MDX](/general/working-mdx) for additional information.
       "uniqueId": "usaco-690",
       "name": "Cow Dance Show",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=690",
-      "source": "Silver",
+      "source": "Electromagnetism",
       "difficulty": "Easy",
       "isStarred": false,
       "tags": ["Binary Search", "Sorted Set"],
@@ -142,8 +142,8 @@ Read our guidelines below before contributing code.
   - There are some exceptions to this guideline (e.g. when using the `Kattio`
     class for Java I/O). In this case, collapse it with a
     [`CodeSnip`](/general/working-mdx#code-blocks-and-code-snippets).
-- Use universally understandable variable names, especially for Bronze and
-  Silver. They should be more descriptive than what you would normally use
+- Use universally understandable variable names, especially for Mechanics and
+  Electromagnetism. They should be more descriptive than what you would normally use
   in-contest.
 - Add comments throughout your code to explain your logic. Feel free to
   copy-paste the official USACO solution and improve it by adding more
@@ -177,14 +177,14 @@ Read our guidelines below before contributing code.
 - Do not use variable names that could conflict with `using namespace std`. For
   example, don't name a `std::set` "set."
 - Do not use variable-length arrays as discussed
-  [here](/bronze/intro-ds?lang=cpp#dynamic-arrays); they are not part of the C++
+  [here](/mechanics/intro-ds?lang=cpp#dynamic-arrays); they are not part of the C++
   standard.
 - Do not include code that doesn't do anything. In particular,
   - Do not include `cout.tie(nullptr)` as discussed
     [here](/general/fast-io?lang=cpp#cintienullptr).
   - Do not include [optimization pragmas](/adv/vectorization) unless you show
     that they improve performance.
-- For Bronze through Gold in particular, do not use additional macros
+- For Mechanics through Thermodynamics in particular, do not use additional macros
   (especially loop macros) beyond the ones listed below (see
   [Github #806](https://github.com/cpinitiative/usaco-guide/issues/806)):
 

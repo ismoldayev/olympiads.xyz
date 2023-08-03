@@ -10,7 +10,7 @@ import {
   UserGroupIcon,
 } from '@heroicons/react/outline';
 import classNames from 'classnames';
-import { Link, navigate } from 'gatsby';
+import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
 import { useRef } from 'react';
@@ -107,7 +107,7 @@ export default function IndexPage(): JSX.Element {
               A free collection of{' '}
               <GradientText>curated, high-quality resources</GradientText>{' '}
               <br className="hidden md:block" />
-              to take you from Bronze to Platinum and beyond.
+              to take you from Mechanics to Modern and beyond.
             </p>
 
             <div className="h-8 sm:h-12"></div>
@@ -532,7 +532,7 @@ export default function IndexPage(): JSX.Element {
           </p>
           {/* Sponsor logos don't fit well in the light theme */}
           <p className="uppercase text-gray-600 dark:text-gray-400 font-semibold pt-6 md:text-lg">
-            Platinum Sponsors
+            Modern Sponsors
           </p>
           <div className="my-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:my-6 text-gray-600 dark:text-gray-400 items-center">
             <div className="col-span-1">
@@ -542,7 +542,7 @@ export default function IndexPage(): JSX.Element {
             </div>
           </div>
           <p className="uppercase text-gray-600 dark:text-gray-400 font-semibold pt-6 md:text-lg">
-            Bronze Sponsors
+            Mechanics Sponsors
           </p>
           <div className="my-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:my-6 text-gray-400 items-center">
             <div className="col-span-1">

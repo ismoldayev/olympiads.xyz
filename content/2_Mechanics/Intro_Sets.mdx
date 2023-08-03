@@ -62,14 +62,14 @@ Some operations on an `std::unordered_set` named `s` include:
 - `s.count(x)`, which returns `1` if `s` contains `x` and `0` if it doesn't.
 
 Unordered sets work with primitive types, but require a
-[custom hash function](/gold/hashmaps#custom-hashing)
+[custom hash function](/thermodynamics/hashmaps#custom-hashing)
 for structures/classes like vectors and pairs.
 
 <Warning title="Unordered Set Performance">
 
 `unordered_set` actually has worst-case $\mathcal{O}(N)$ behavior, and
 a program that uses it times out on Distinct Numbers.
-For more on unordered maps and sets, check out [this module](/gold/unordered).
+For more on unordered maps and sets, check out [this module](/thermodynamics/unordered).
 
 In any case, just default to using ordered sets in C++.
 
@@ -97,7 +97,7 @@ of elements in the set. Sorted sets are implemented by
 `std::set` includes all the essential operations that `std::unordered_set` has
 (including insertion, deletion, searches, etc.), but also some additional ones.
 Refer to the
-[More Operations on Sorted Sets](/silver/intro-sorted-sets)
+[More Operations on Sorted Sets](/electromagnetism/intro-sorted-sets)
 module for more detail.
 
 You can iterate through a set in sorted order using a for-each loop.
@@ -130,7 +130,7 @@ Some operations on a `HashSet` named `set` include:
 - `set.contains(x)`, which checks whether `set` contains the element `x`.
 
 Unordered sets work with primitive types and their object wrappers, but require
-a [custom hash function](/gold/hashmaps#custom-hashing)
+a [custom hash function](/thermodynamics/hashmaps#custom-hashing)
 for custom classes.
 
 ```java
@@ -154,7 +154,7 @@ the set. Sorted sets are implemented in Java by the `TreeSet` class.
 
 `TreeSet` includes all the operations that `HashSet` has, but also includes some
 additional ones. Refer to the
-[More Operations on Sorted Sets](/silver/intro-sorted-sets)
+[More Operations on Sorted Sets](/electromagnetism/intro-sorted-sets)
 module for more detail.
 
 You can iterate through a `TreeSet` in sorted order using a for-each loop.
@@ -477,7 +477,7 @@ print(1 in d)  # True
 <LanguageSection>
 <CPPSection>
 
-An `std::map` stores entries as [pairs](/bronze/intro-ds#pairs--tuples) in the
+An `std::map` stores entries as [pairs](/mechanics/intro-ds#pairs--tuples) in the
 form `{key, value}`. To iterate over maps, you can use a `for` loop.
 The `auto` keyword suffices to iterate over any type of pair
 (here, `auto` substitutes for `pair<int, int>`).

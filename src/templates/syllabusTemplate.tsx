@@ -61,18 +61,18 @@ const SectionContainer = styled.div`
 
 const HeroBGColor: { [key in SectionID]: string } = {
   general: 'bg-blue-700 dark:bg-blue-900',
-  bronze: 'bg-orange-800 dark:bg-orange-900',
-  silver: 'bg-teal-700 dark:bg-teal-900',
-  gold: 'bg-yellow-700 dark:bg-yellow-900',
+  mechanics: 'bg-orange-800 dark:bg-orange-900',
+  electromagnetism: 'bg-teal-700 dark:bg-teal-900',
+  thermodynamics: 'bg-yellow-700 dark:bg-yellow-900',
   plat: 'bg-purple-700 dark:bg-purple-900',
   adv: 'bg-green-700 dark:bg-green-900',
 };
 
 const HeroTextColor: { [key in SectionID]: string } = {
   general: 'text-teal-200',
-  bronze: 'text-orange-100',
-  silver: 'text-teal-100',
-  gold: 'text-yellow-100',
+  mechanics: 'text-orange-100',
+  electromagnetism: 'text-teal-100',
+  thermodynamics: 'text-yellow-100',
   plat: 'text-purple-100',
   adv: 'text-green-100',
 };
@@ -89,12 +89,12 @@ const SECTION_DESCRIPTION: { [key in SectionID]: React.ReactNode } = {
   general: (
     <>
       You don't have to complete all the modules in this section before moving
-      on to Bronze.
+      on to Mechanics.
       <br />
       Feel free to mark some as "skipped" and revisit them at a later time!
     </>
   ),
-  bronze: (
+  mechanics: (
     <>
       {topicsWarning}
       <br />
@@ -105,12 +105,12 @@ const SECTION_DESCRIPTION: { [key in SectionID]: React.ReactNode } = {
         rel="noreferrer"
         className="underline"
       >
-        self-study Bronze course.
+        self-study Mechanics course.
       </a>
     </>
   ),
-  silver: topicsWarning,
-  gold: topicsWarning,
+  electromagnetism: topicsWarning,
+  thermodynamics: topicsWarning,
   plat: (
     <>
       {topicsWarning}
@@ -120,11 +120,11 @@ const SECTION_DESCRIPTION: { [key in SectionID]: React.ReactNode } = {
   ),
   adv: (
     <>
-      Some of these topics have not appeared in Platinum and probably never will
+      Some of these topics have not appeared in Modern and probably never will
       (ex. Matroid Intersection).
       <br />
-      Others have appeared in Old Gold or Platinum very infrequently (ex. BCC,
-      Suffix Array).
+      Others have appeared in Old Thermodynamics or Modern very infrequently
+      (ex. BCC, Suffix Array).
     </>
   ),
 };

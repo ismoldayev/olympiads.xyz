@@ -35,7 +35,7 @@ for filename in os.listdir("."):
 							# def cut(names,cut_len):
 							# 	return {name[:cut_len]:name for name in names}
 
-							# divs = cut(['Bronze','Silver','Gold','Platinum'],4)
+							# divs = cut(['Mechanics','Electromagnetism','Thermodynamics','Modern'],4)
 							# # print(divs)
 							# # sys.exit(0)
 
@@ -47,7 +47,7 @@ for filename in os.listdir("."):
 							# months = cut(['January','February','December','Open'],3)
 							# assert tokens[3][:3] in months
 							# tokens[3] = months[tokens[3][:3]]
-							# # if tokens[-1][:4] in ["Bron","Silv",'Gold',"Plat"]:
+							# # if tokens[-1][:4] in ["Bron","Silv",'Thermodynamics',"Plat"]:
 							# # 	tokens[1],tokens[2],tokens[3] = tokens[3],tokens[2],tokens[1]
 							# lines[index] = 'source: '+' '.join(tokens)+'\n'
 							# mod = True

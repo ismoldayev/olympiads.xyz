@@ -110,7 +110,7 @@
       "uniqueId": "usaco-418",
       "name": "The Lazy Cow",
       "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=418",
-      "source": "Old Gold",
+      "source": "Old Thermodynamics",
       "difficulty": "Easy",
       "isStarred": false,
       "tags": ["Lazy SegTree"],

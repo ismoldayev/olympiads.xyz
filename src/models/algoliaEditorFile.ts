@@ -3,7 +3,7 @@ import { ProblemSolutionInfo } from './problem';
 export type AlgoliaEditorModuleFile = {
   title: string;
   id: string;
-  // content/1_Bronze/Complete_Rec.mdx
+  // content/1_Mechanics/Complete_Rec.mdx
   path: string;
 };
 

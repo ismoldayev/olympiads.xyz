@@ -40,8 +40,9 @@ export default function ProblemSuggestionModal({
   const inEditor = editorActions.inEditor;
 
   // will be null if in editor
-  const markdownLayoutInfo = useContext(MarkdownLayoutContext)
-    ?.markdownLayoutInfo;
+  const markdownLayoutInfo = useContext(
+    MarkdownLayoutContext
+  )?.markdownLayoutInfo;
 
   const darkMode = useDarkMode();
 
@@ -134,13 +135,13 @@ export default function ProblemSuggestionModal({
   };
   const getLabel = source => {
     const map = {
-      'Old Bronze': 'Old USACO Bronze (Before Dec 2015)',
-      'Old Silver': 'Old USACO Silver (Before Dec 2015)',
-      'Old Gold': 'Old USACO Gold (Before Dec 2015)',
-      Bronze: 'Recent USACO Bronze (Dec 2015 and Later)',
-      Silver: 'Recent USACO Silver (Dec 2015 and Later)',
-      Gold: 'Recent USACO Gold (Dec 2015 and Later)',
-      Plat: 'USACO Platinum',
+      'Old Mechanics': 'Old USACO Mechanics (Before Dec 2015)',
+      'Old Electromagnetism': 'Old USACO Electromagnetism (Before Dec 2015)',
+      'Old Thermodynamics': 'Old USACO Thermodynamics (Before Dec 2015)',
+      Mechanics: 'Recent USACO Mechanics (Dec 2015 and Later)',
+      Electromagnetism: 'Recent USACO Electromagnetism (Dec 2015 and Later)',
+      Thermodynamics: 'Recent USACO Thermodynamics (Dec 2015 and Later)',
+      Plat: 'USACO Modern',
     };
     if (map[source]) return map[source];
     return probSources[source][1];
@@ -157,8 +158,7 @@ export default function ProblemSuggestionModal({
       .filter(
         val =>
           !isAdditionalPractice ||
-          (!val.label.includes('Recent USACO') &&
-            !val.label.includes('Platinum'))
+          (!val.label.includes('Recent USACO') && !val.label.includes('Modern'))
       ),
     {
       label: 'Other',
@@ -189,7 +189,7 @@ export default function ProblemSuggestionModal({
             <input
               type="text"
               className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md dark:bg-gray-900 dark:border-gray-700"
-              placeholder="Ex: USACO December 2012 Silver - Steeplechase"
+              placeholder="Ex: USACO December 2012 Electromagnetism - Steeplechase"
               value={name}
               onChange={e => setName(e.target.value)}
               required

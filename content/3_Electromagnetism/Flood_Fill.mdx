@@ -1,7 +1,7 @@
 ---
 id: flood-fill
 redirects:
-  - /silver/ff
+  - /electromagnetism/ff
 title: Flood Fill
 author: Darren Yao
 contributors: Kevin Sheng, George Pong
@@ -372,7 +372,7 @@ visited array, dimensions, and the current size variable globally.
 This means that we want to recursively call the search function for the squares
 above, below, and to the left and right of our current square. Due to its
 recursive nature, floodfill can be thought of as a modified version of
-[DFS](/silver/graph-traversal). The algorithm to
+[DFS](/electromagnetism/graph-traversal). The algorithm to
 find the size of a connected component in a grid using flood fill is as follows
 (we’ll also maintain a 2D visited array).
 
@@ -558,7 +558,7 @@ Recursive implementations of flood fill sometimes lead to
 
 </Warning>
 
-A non-recursive implementation of flood fill adds adjacent nodes to a stack or queue, similar to [BFS](/silver/graph-traversal), and is usually implemented as follows:
+A non-recursive implementation of flood fill adds adjacent nodes to a stack or queue, similar to [BFS](/electromagnetism/graph-traversal), and is usually implemented as follows:
 
 <LanguageSection>
 

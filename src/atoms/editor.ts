@@ -89,7 +89,7 @@ export const createNewInternalSolutionFileAtom = atom(
 id: ${file.id}
 source: ${
         file.source
-      } (TODO -- convert to something like \`USACO Silver 2017 January\`)
+      } (TODO -- convert to something like \`USACO Electromagnetism 2017 January\`)
 title: ${file.title}
 author: TODO -- insert your name here
 ---

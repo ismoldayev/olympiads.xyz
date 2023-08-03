@@ -1,6 +1,6 @@
 ---
 id: usaco-1327
-source: USACO Silver 2023 Open
+source: USACO Electromagnetism 2023 Open
 title: Field Day
 author: Ryan Chou
 ---
@@ -21,7 +21,7 @@ This should inspire you to use bitmasks!
 
 <Spoiler title="Solution">
 
-[Official Analysis (C++, Java, and Python)](http://www.usaco.org/current/data/sol_prob2_silver_open23.html)
+[Official Analysis (C++, Java, and Python)](http://www.usaco.org/current/data/sol_prob2_electromagnetism_open23.html)
 
 ## Explanation
 
@@ -41,7 +41,7 @@ $\mathcal{O}(2^C \cdot C)$ time.
 Our answer would then be $C - \texttt{dist}_{\text{inv}(\texttt{team}_i)}$ where $\texttt{team}_i$ is our current team,
 $\text{inv}(x)$ returns the inverse for $x$, and $\texttt{dist}_{\texttt{mask}}$ gives us the minimum edit distance from one of FJ's teams.
 
-We can also compute this minimum distance with a [multi-source BFS](/silver/graph-traversal) in the same time complexity.
+We can also compute this minimum distance with a [multi-source BFS](/electromagnetism/graph-traversal) in the same time complexity.
 
 ## Implementation
 

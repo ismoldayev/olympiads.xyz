@@ -90,7 +90,7 @@ int main() {
 
 ## Solution 2: Fenwick Tree
 
-We can use a [Fenwick tree](/gold/PURS#binary-indexed-tree) to simulate an order statistic tree/indexed set.
+We can use a [Fenwick tree](/thermodynamics/PURS#binary-indexed-tree) to simulate an order statistic tree/indexed set.
 
 The Fenwick array (let's call it `fa`)can be treated as a frequency array. For example, if 5 is inserted into the window, `fa[5] += 1`. This enables us to binary search for an integer $x$ such that
 

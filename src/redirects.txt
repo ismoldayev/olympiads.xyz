@@ -9,7 +9,7 @@
 /solutions/joi-16-skyscraper	/problems/joi-2016skyscraper/solution
 /solutions/usaco-949	/problems/usaco-949-compound-escape/solution
 /solutions/joi-18-snake-escaping	/problems/joi-2018snake-escaping/solution
-/solutions/apio-17-rainbow	/problems/dmoj-land-of-the-rainbow-gold/solution
+/solutions/apio-17-rainbow	/problems/dmoj-land-of-the-rainbow-thermodynamics/solution
 /solutions/poi-18-wie	/problems/poi-2018polynomial/solution
 /solutions/apio-16-gap	/problems/apio-2016gap/solution
 /solutions/apio-17-koala	/problems/apio-2017koala-game/solution

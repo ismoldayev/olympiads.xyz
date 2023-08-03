@@ -8,7 +8,7 @@ type ProblemsListHeaderProps = {
   | {
       isDivisionTable: true;
       showSolvePercentage: boolean;
-      showPlatinumSolvePercentageMessage: boolean;
+      showModernSolvePercentageMessage: boolean;
     }
   | {
       isDivisionTable: false;
@@ -38,7 +38,7 @@ export default function ProblemsListHeader(
             <th className="pl-4 md:pl-6 pr-4 md:pr-6 py-3 text-left text-xs leading-4 font-medium uppercase tracking-wider">
               <TextTooltip
                 content={
-                  props.showPlatinumSolvePercentageMessage
+                  props.showModernSolvePercentageMessage
                     ? 'Percentage of points scored by the top 10 USA pre-college participants.'
                     : 'Percentage of points scored by pre-college promoters. Can be interpreted as a combination of difficulty + how strong the test data is.'
                 }

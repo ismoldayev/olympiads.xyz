@@ -46,7 +46,7 @@ const problemLists: {
         solution: {
           kind: 'link',
           label: 'In Module',
-          url: `https://usaco.guide/bronze/intro-complete/#problem-cfgym-102951A`,
+          url: `https://usaco.guide/mechanics/intro-complete/#problem-cfgym-102951A`,
         },
       },
     ],

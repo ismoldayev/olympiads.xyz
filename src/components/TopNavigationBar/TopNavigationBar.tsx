@@ -117,25 +117,25 @@ export default function TopNavigationBar({
       key: 'general',
     },
     {
-      name: 'Bronze',
-      href: '/bronze',
+      name: 'Mechanics',
+      href: '/mechanics',
       icon: BookmarkIcon,
-      key: 'bronze',
+      key: 'mechanics',
     },
     {
-      name: 'Silver',
-      href: '/silver',
+      name: 'Electromagnetism',
+      href: '/electromagnetism',
       icon: BookmarkIcon,
-      key: 'silver',
+      key: 'electromagnetism',
     },
     {
-      name: 'Gold',
-      href: '/gold',
+      name: 'Thermodynamics',
+      href: '/thermodynamics',
       icon: BookmarkIcon,
-      key: 'gold',
+      key: 'thermodynamics',
     },
     {
-      name: 'Platinum',
+      name: 'Modern',
       href: '/plat',
       icon: BookmarkIcon,
       key: 'plat',
@@ -156,8 +156,8 @@ export default function TopNavigationBar({
             <div className="pr-16 sm:text-center sm:px-16">
               <p className="font-medium text-white">
                 <span className="md:inline">
-                  We're looking for instructors for USACO Bronze and Silver
-                  classes!
+                  We're looking for instructors for USACO Mechanics and
+                  Electromagnetism classes!
                 </span>
                 <span className="block sm:ml-2 sm:inline-block">
                   <a
