@@ -205,7 +205,7 @@ export default function TopNavigationBar({
                       : 'inline-flex items-center px-1 pt-0.5 border-b-2 border-transparent text-base font-medium leading-6 text-gray-500 hover:text-gray-900 hover:border-gray-300  focus:outline-none focus:text-gray-900 focus:border-gray-300 dark:text-dark-high-emphasis dark:hover:border-gray-500 dark:focus:border-gray-500 transition',
                   })}
                 >
-                  Problems
+                  Архив
                 </Link>
                 <Popover.Group as="nav" className="h-full">
                   <Popover className="h-full">
@@ -485,7 +485,7 @@ export default function TopNavigationBar({
                     aria-hidden="true"
                   />
                   <span className="ml-3 text-base font-medium text-gray-700 dark:text-gray-300">
-                    Problems
+                    Архив
                   </span>
                 </Link>
                 <a

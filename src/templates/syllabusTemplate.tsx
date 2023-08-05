@@ -88,10 +88,11 @@ const topicsWarning = (
 const SECTION_DESCRIPTION: { [key in SectionID]: React.ReactNode } = {
   general: (
     <>
-      You don't have to complete all the modules in this section before moving
-      on to Mechanics.
+      Не е необходимо да завършите всички модули в този раздел, преди да
+      преминете към Механика.
       <br />
-      Feel free to mark some as "skipped" and revisit them at a later time!
+      Чувствайте се свободни да маркирате някои като „пропуснати“ и да ги
+      прегледате отново по-късно!
     </>
   ),
   mechanics: (

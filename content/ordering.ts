@@ -111,7 +111,7 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
       name: 'Graphs',
       description:
         'Most Electromagnetism to Modern contests have at least one graph problem.',
-      items: ['graph-traversal', 'flood-fill', 'intro-tree', 'func-graphs'],
+      items: ['graph-traversal', 'flood-fill', 'func-graphs'],
     },
     {
       name: 'Additional Topics',
@@ -269,32 +269,32 @@ export const SECTIONS: SectionID[] = Object.keys(
   MODULE_ORDERING
 ) as SectionID[];
 export const SECTION_LABELS: { [key in SectionID]: string } = {
-  general: 'General',
-  mechanics: 'Mechanics',
-  electromagnetism: 'Electromagnetism',
-  thermodynamics: 'Thermodynamics',
-  plat: 'Modern',
-  adv: 'Advanced',
+  general: 'Общи',
+  mechanics: 'Механика',
+  electromagnetism: 'Електромагнетизъм',
+  thermodynamics: 'Термодинамика',
+  plat: 'Модерна физика',
+  adv: 'Астрономия',
 };
 export const SECTION_SEO_DESCRIPTION: { [key in SectionID]: string } = {
   general:
-    'General information for USACO and Competitive Programming. Includes resources to pick a language, set up an IDE, practice tips, and more!',
+    'Обща информация за олимпиади по физика и астрономия. Включва ресурси за подготовка, практични съвети и още!',
   mechanics:
-    'Topics for USACO Mechanics include time complexity, data structures, sorting, simulation, complete search, ad hoc, greedy, graphs, rectangle geometry, sets and maps, and recursion.',
+    'Темите по механика включват кинематика, статика, динамика, трептения, въртеливи движения, гравитация, механика на флуиди и още!.',
   electromagnetism:
-    'Topics for USACO Electromagnetism include binary search on the answer, prefix sums, two pointers, dfs, floodfill, trees, custom comparators, greedy with sorting, and more!',
+    'Темите по електромагнетизъм включват електростатика, електрични вериги, магнетизъм, магнетостатика, RLC вериги, електромагнитна индукция, проводници, полупроводници, движение на заряди и още!',
   thermodynamics:
-    'Topics for USACO Thermodynamics include dynamic programming, union-find, shortest paths, point update range sum, topological sort, minimum spanning trees, euler tour, string hashing, and more!',
-  plat: 'Topics for USACO Modern include segment trees, advanced tree techniques, advanced dynamic programming, computational geometry, matrix exponentiation, and more!',
-  adv: 'Topics usually outside the scope of most USACO contests include segment tree beats, treaps, slope trick, strongly connected components, max-flow, suffix arrays, fast fourier transform, and more!',
+    'Темите по термодинамика включват идеални газове, ентропия, цикли, КПД, молекулно-кинетична теория, повърхностно напрежение, фазови преходи, излъчване, атмосфера и още!',
+  plat: 'Темите по модерна физика включват релативистика, геометрична оптика, вълни, интерференция, дифракция, квантова механика, ядрена физика, физика на кондензираната материя и още!',
+  adv: 'Темите по астрономия включват геометрия и време, небесна сфера, небесна механика, оптика, частици и полета, закони за излъчване, галактики, космология и още!',
 };
 export const SECTION_SEO_TITLES: { [key in SectionID]: string } = {
-  general: 'General USACO Information',
-  mechanics: 'USACO Mechanics Topics',
-  electromagnetism: 'USACO Electromagnetism Topics',
-  thermodynamics: 'USACO Thermodynamics Topics',
-  plat: 'USACO Modern Topics',
-  adv: 'Advanced USACO Topics',
+  general: 'Обща информация за Olympiads.xyz',
+  mechanics: 'Задачи по механика',
+  electromagnetism: 'Задачи по електромагнетизъм',
+  thermodynamics: 'Задачи по термодинамика',
+  plat: 'Задачи по модерна физика',
+  adv: 'Задачи по астрономия',
 };
 
 const moduleIDToSectionMap: { [key: string]: SectionID } = {};
