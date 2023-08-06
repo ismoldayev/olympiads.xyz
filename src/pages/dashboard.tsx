@@ -101,8 +101,8 @@ export default function DashboardPage(props: PageProps) {
         x =>
           (userProgressOnModules[x] === 'Reading' ||
             userProgressOnModules[x] === 'Practicing' ||
-            userProgressOnModules[x] === 'Skipped' ||
-            (showIgnored && userProgressOnModules[x] === 'Ignored')) &&
+            userProgressOnModules[x] === 'Прескоченo' ||
+            (showIgnored && userProgressOnModules[x] === 'Игнорирано')) &&
           moduleIDToSectionMap.hasOwnProperty(x)
       )
       .map(x => ({
@@ -111,10 +111,10 @@ export default function DashboardPage(props: PageProps) {
         }`,
         url: moduleIDToURLMap[x],
         status: userProgressOnModules[x] as
-          | 'Skipped'
+          | 'Прескоченo'
           | 'Reading'
           | 'Practicing'
-          | 'Ignored',
+          | 'Игнорирано',
       }));
   }, [userProgressOnModules, showIgnored]);
   const activeProblems: ActiveItem[] = React.useMemo(() => {
@@ -123,8 +123,8 @@ export default function DashboardPage(props: PageProps) {
         x =>
           (userProgressOnProblems[x] === 'Reviewing' ||
             userProgressOnProblems[x] === 'Solving' ||
-            userProgressOnProblems[x] === 'Skipped' ||
-            (showIgnored && userProgressOnProblems[x] === 'Ignored')) &&
+            userProgressOnProblems[x] === 'Прескоченo' ||
+            (showIgnored && userProgressOnProblems[x] === 'Игнорирано')) &&
           problemIDMap.hasOwnProperty(x)
       )
       .map(x => ({
@@ -133,8 +133,8 @@ export default function DashboardPage(props: PageProps) {
         status: userProgressOnProblems[x] as
           | 'Reviewing'
           | 'Solving'
-          | 'Skipped'
-          | 'Ignored',
+          | 'Прескоченo'
+          | 'Игнорирано',
       }));
   }, [userProgressOnProblems, showIgnored]);
 
@@ -175,11 +175,11 @@ export default function DashboardPage(props: PageProps) {
                 <div className="w-full text-center">
                   {firebaseUser ? (
                     <>
-                      Signed in as <i>{firebaseUser.email}</i>.
+                      Влезли сте като <i>{firebaseUser.email}</i>.
                     </>
                   ) : (
                     <span>
-                      Not signed in.{' '}
+                      Не сте влезли в профила си.{' '}
                       <a
                         href="#"
                         onClick={e => {
@@ -188,7 +188,7 @@ export default function DashboardPage(props: PageProps) {
                         }}
                         className="text-blue-600 dark:text-blue-300 underline"
                       >
-                        Sign in now!
+                        Влезте сега!
                       </a>{' '}
                     </span>
                   )}
@@ -217,7 +217,7 @@ export default function DashboardPage(props: PageProps) {
           <header id="announcements">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h1 className="text-3xl font-bold leading-tight text-gray-900 dark:text-dark-high-emphasis">
-                Announcements
+                Съобщения
               </h1>
             </div>
           </header>
@@ -227,7 +227,7 @@ export default function DashboardPage(props: PageProps) {
           <header>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h1 className="text-3xl font-bold leading-tight text-gray-900 dark:text-dark-high-emphasis">
-                Activity
+                Активност
               </h1>
             </div>
           </header>
@@ -237,7 +237,7 @@ export default function DashboardPage(props: PageProps) {
           <header>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h1 className="text-3xl font-bold leading-tight text-gray-900 dark:text-dark-high-emphasis">
-                Statistics
+                Статистика
               </h1>
             </div>
           </header>
@@ -247,7 +247,7 @@ export default function DashboardPage(props: PageProps) {
                 <Card>
                   <div className="px-4 py-5 sm:p-6">
                     <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-dark-high-emphasis">
-                      Modules Progress - {SECTION_LABELS[lastViewedSection]}
+                      Напредък по модули - {SECTION_LABELS[lastViewedSection]}
                     </h3>
                     <div className="mt-6">
                       <DashboardProgress
@@ -262,7 +262,7 @@ export default function DashboardPage(props: PageProps) {
                 <Card>
                   <div className="px-4 py-5 sm:p-6">
                     <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-dark-high-emphasis">
-                      Problems Progress - {SECTION_LABELS[lastViewedSection]}
+                      Напредък по задачи - {SECTION_LABELS[lastViewedSection]}
                     </h3>
                     <div className="mt-6">
                       <DashboardProgress

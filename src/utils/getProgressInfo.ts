@@ -33,10 +33,10 @@ export function getModulesProgressInfo(moduleIDs: string[]) {
   return getProgressInfo(
     moduleIDs,
     userProgressOnModules,
-    ['Complete'],
+    ['Завършено'],
     ['Reading', 'Practicing'],
-    ['Skipped'],
-    ['Not Started']
+    ['Прескоченo'],
+    ['Незапочнато']
   );
 }
 
@@ -45,9 +45,9 @@ export function getProblemsProgressInfo(problemIDs: string[]) {
   return getProgressInfo(
     problemIDs,
     userProgressOnProblems,
-    ['Solved', 'Reviewing'],
+    ['Решено', 'Reviewing'],
     ['Solving'],
-    ['Skipped'],
+    ['Прескоченo'],
     ['Not Attempted']
   );
 }

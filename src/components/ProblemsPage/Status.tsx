@@ -6,10 +6,10 @@ import UserDataContext from '../../context/UserDataContext/UserDataContext';
 const options = [
   { label: 'Not Attempted', value: 'Not Attempted' },
   { label: 'Solving', value: 'Solving' },
-  { label: 'Solved', value: 'Solved' },
+  { label: 'Решено', value: 'Решено' },
   { label: 'Reviewing', value: 'Reviewing' },
-  { label: 'Skipped', value: 'Skipped' },
-  { label: 'Ignored', value: 'Ignored' },
+  { label: 'Прескоченo', value: 'Прескоченo' },
+  { label: 'Игнорирано', value: 'Игнорирано' },
 ];
 
 export default function Status({ refine, problemIds }): JSX.Element {

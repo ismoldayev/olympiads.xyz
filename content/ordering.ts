@@ -304,7 +304,7 @@ export const SECTION_SEO_DESCRIPTION: { [key in SectionID]: string } = {
   adv: 'Темите по астрономия включват геометрия и време, небесна сфера, небесна механика, оптика, частици и полета, закони за излъчване, галактики, космология и още!',
 };
 export const SECTION_SEO_TITLES: { [key in SectionID]: string } = {
-  general: 'Обща информация за Olympiads.xyz',
+  general: 'Обща информация',
   mechanics: 'Теми по механика',
   electromagnetism: 'Теми по електромагнетизъм',
   thermodynamics: 'Теми по термодинамика',

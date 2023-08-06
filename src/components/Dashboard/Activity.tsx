@@ -28,7 +28,7 @@ export default function Activity() {
   for (const activity of userProgressOnModulesActivity) {
     if (
       activity.moduleProgress === 'Practicing' ||
-      activity.moduleProgress === 'Complete'
+      activity.moduleProgress === 'Завършено'
     ) {
       const newDate = new Date(activity.timestamp);
       newDate.setHours(0, 0, 0, 0);
@@ -52,7 +52,7 @@ export default function Activity() {
 
   const problemIDs = [];
   for (const activity of userProgressOnProblemsActivity) {
-    if (activity.problemProgress === 'Solved') {
+    if (activity.problemProgress === 'Решено') {
       const newDate = new Date(activity.timestamp);
       newDate.setHours(0, 0, 0, 0);
       if (
@@ -109,23 +109,24 @@ export default function Activity() {
             {activeDate ? (
               <div className="text-gray-800 dark:text-gray-200">
                 <b>{activeDate.toString().substr(0, 16)}</b> <br />
-                <p>{activeDateProblemsSolved} problem(s) solved</p>
+                <p>{activeDateProblemsSolved} решени задачи</p>
                 <p>
-                  {activeDateModulesCompleted} module(s) marked practicing /
-                  completed
+                  {activeDateModulesCompleted} модула маркирани като
+                  активни/завършени
                 </p>
               </div>
             ) : (
               <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">
-                Hover over a square to view more details!
+                Преместете курсора върху квадратче, за да видите повече
+                подробности!
               </p>
             )}
           </div>
         </div>
 
         <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">
-          Note that activity calculations are very much in development and will
-          change in the near future.
+          Имайте предвид, че изчисленията на активност все още се разработват и
+          ще се променят в близко бъдеще.
         </p>
       </div>
     </div>

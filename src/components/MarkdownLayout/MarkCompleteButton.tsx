@@ -28,7 +28,7 @@ const moduleProgressToIcon = (status: ModuleProgress): JSX.Element => {
           <path d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" />
         </svg>
       );
-    case 'Complete':
+    case 'Завършено':
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ const moduleProgressToIcon = (status: ModuleProgress): JSX.Element => {
           <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
         </svg>
       );
-    case 'Skipped':
+    case 'Прескоченo':
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ const moduleProgressToIcon = (status: ModuleProgress): JSX.Element => {
           />
         </svg>
       );
-    case 'Ignored':
+    case 'Игнорирано':
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -96,12 +96,12 @@ const MarkCompleteButton = ({
             <Menu.Button
               type="button"
               className={`rounded-md shadow-sm inline-flex justify-center w-full rounded-md border border-gray-300 dark:border-gray-800 pr-4 ${
-                state === 'Not Started' ? 'pl-4' : 'pl-3'
+                state === 'Незапочнато' ? 'pl-4' : 'pl-3'
               } py-2 bg-white dark:bg-gray-900 dark:hover:bg-gray-800 text-sm leading-5 font-medium text-gray-700 dark:text-gray-200 hover:text-gray-500 dark:hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-dark-surface`}
             >
               {moduleProgressToIcon(state as ModuleProgress)}
               <span
-                className={`flex-1${state === 'Not Started' ? '' : ' ml-1.5'}`}
+                className={`flex-1${state === 'Незапочнато' ? '' : ' ml-1.5'}`}
               >
                 {state}
               </span>

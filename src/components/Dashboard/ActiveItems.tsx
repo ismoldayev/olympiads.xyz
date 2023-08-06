@@ -4,8 +4,8 @@ import { difficultyClasses } from '../markdown/ProblemsList/ProblemsListItem';
 import DashboardCard from './DashboardCard';
 
 type ActiveItemStatus =
-  | 'Skipped'
-  | 'Ignored'
+  | 'Прескоченo'
+  | 'Игнорирано'
   | 'Reading' // only for modules
   | 'Practicing' // only for modules
   | 'Solving' // only for problems
@@ -18,8 +18,8 @@ export type ActiveItem = {
 };
 
 const statusClasses: { [key in ActiveItemStatus]: string } = {
-  Skipped: difficultyClasses.Normal,
-  Ignored: 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100',
+  Прескочено: difficultyClasses.Normal,
+  Игнорирано: 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100',
   Reading:
     'bg-yellow-100 text-yellow-800 dark:bg-yellow-800 dark:text-yellow-100',
   Practicing: difficultyClasses.Easy,
@@ -47,8 +47,8 @@ export default function ActiveItems({
       Reading: 0,
       Solving: 1,
       Practicing: 1,
-      Skipped: 2,
-      Ignored: 3,
+      Прескочено: 2,
+      Игнорирано: 3,
     };
     const astatus = statusVal[a.status];
     const bstatus = statusVal[b.status];

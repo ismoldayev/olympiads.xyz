@@ -76,7 +76,7 @@ export default function MarkdownLayout({
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const moduleProgress =
     (userProgressOnModules && userProgressOnModules[markdownData.id]) ||
-    'Not Started';
+    'Незапочнато';
 
   const tableOfContents =
     lang in markdownData.toc ? markdownData.toc[lang] : markdownData.toc['cpp'];
@@ -108,8 +108,8 @@ export default function MarkdownLayout({
     if (moduleProgress === progress) return;
     setModuleProgress(markdownData.id, progress);
     if (
-      moduleProgress !== 'Complete' &&
-      (progress === 'Practicing' || progress === 'Complete')
+      moduleProgress !== 'Завършено' &&
+      (progress === 'Practicing' || progress === 'Завършено')
     ) {
       showConfetti();
     }

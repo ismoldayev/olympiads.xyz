@@ -524,18 +524,18 @@ export function autoGenerateSolutionMetadata(
 export type ProblemProgress =
   | 'Not Attempted'
   | 'Solving'
-  | 'Solved'
+  | 'Решено'
   | 'Reviewing'
-  | 'Skipped'
-  | 'Ignored';
+  | 'Прескоченo'
+  | 'Игнорирано';
 
 export const PROBLEM_PROGRESS_OPTIONS: ProblemProgress[] = [
   'Not Attempted',
   'Solving',
-  'Solved',
+  'Решено',
   'Reviewing',
-  'Skipped',
-  'Ignored',
+  'Прескоченo',
+  'Игнорирано',
 ];
 
 export type ProblemDifficulty =

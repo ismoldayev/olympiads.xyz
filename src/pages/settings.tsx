@@ -86,15 +86,15 @@ export default function SettingsPage() {
                 clipRule="evenodd"
               />
             </svg>
-            Back
+            Назад
           </button>
           <div className="pt-4 sm:pt-6 pb-16">
             <div className="px-4 sm:px-6 md:px-0">
               <h1 className="text-3xl font-extrabold text-gray-900 dark:text-gray-100">
-                Settings
+                Настройки
               </h1>
               <p className="text-gray-500 dark:text-gray-400 mt-2">
-                If you're signed in, settings sync across devices.
+                Ако сте влезли, настройките се синхронизират между устройства.
               </p>
             </div>
             <div className="px-4 sm:px-6 md:px-0">
@@ -102,9 +102,9 @@ export default function SettingsPage() {
                 <UnderlinedTabs
                   options={tabs}
                   labelMap={{
-                    general: 'General',
-                    profile: 'Profile',
-                    auth: 'Sign In Methods',
+                    general: 'Общи',
+                    profile: 'Профил',
+                    auth: 'Методи за влизане',
                     'user-data': 'User Data',
                     admin: 'Admin Settings',
                   }}

@@ -27,17 +27,17 @@ const ProgressDropdown = ({ onProgressSelected, currentProgress }) => {
     const colorMap: { [key in ProblemProgress]: string } = {
       'Not Attempted': '',
       Solving: 'text-orange-500',
-      Solved: 'text-green-400',
+      Решено: 'text-green-400',
       Reviewing: 'text-red-500',
-      Skipped: 'text-blue-400',
-      Ignored: 'text-purple-400',
+      Прескочено: 'text-blue-400',
+      Игнорирано: 'text-purple-400',
     };
     const pathMap: { [key in ProblemProgress]: JSX.Element } = {
       'Not Attempted': <> </>,
       Solving: (
         <path d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" />
       ),
-      Solved: (
+      Решено: (
         <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
       ),
       Reviewing: (
@@ -47,7 +47,7 @@ const ProgressDropdown = ({ onProgressSelected, currentProgress }) => {
           clipRule="evenodd"
         />
       ),
-      Skipped: (
+      Прескочено: (
         <>
           <path
             fillRule="evenodd"
@@ -61,7 +61,7 @@ const ProgressDropdown = ({ onProgressSelected, currentProgress }) => {
           />
         </>
       ),
-      Ignored: (
+      Игнорирано: (
         <path
           fillRule="evenodd"
           d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -154,8 +154,8 @@ export default function ProblemStatusCheckbox({
     const { markdownLayoutInfo } = markdownLayoutContext;
     const moduleProgress =
       (userProgressOnModules && userProgressOnModules[markdownLayoutInfo.id]) ||
-      'Not Started';
-    if (moduleProgress !== 'Not Started') return;
+      'Незапочнато';
+    if (moduleProgress !== 'Незапочнато') return;
     setModuleProgress(markdownLayoutInfo.id, 'Practicing');
   };
   const status: ProblemProgress =
@@ -163,10 +163,10 @@ export default function ProblemStatusCheckbox({
   const color: { [key in ProblemProgress]: string } = {
     'Not Attempted': 'bg-gray-200 dark:bg-gray-700',
     Solving: 'bg-orange-400 dark:bg-orange-400',
-    Solved: 'bg-green-500 dark:bg-green-600',
+    Решено: 'bg-green-500 dark:bg-green-600',
     Reviewing: 'bg-red-500 dark:bg-red-600',
-    Ignored: 'bg-red-100 dark:bg-red-900',
-    Skipped: 'bg-blue-300 dark:bg-blue-700',
+    Игнорирано: 'bg-red-100 dark:bg-red-900',
+    Прескочено: 'bg-blue-300 dark:bg-blue-700',
   };
   const tippyRef = useRef<any>();
   const showConfetti = useContext(ConfettiContext);

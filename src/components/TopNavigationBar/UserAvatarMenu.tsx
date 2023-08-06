@@ -50,7 +50,7 @@ export const UserAvatarMenu: React.FC<UserAvatarMenuProps> = props => {
                         'block w-full text-left px-4 py-2 text-sm leading-5 text-gray-700 dark:text-gray-100 focus:outline-none'
                       )}
                     >
-                      Settings
+                      Настройки
                     </Link>
                   )}
                 </Menu.Item>
@@ -66,7 +66,7 @@ export const UserAvatarMenu: React.FC<UserAvatarMenuProps> = props => {
                       )}
                       role="menuitem"
                     >
-                      Sign out
+                      Излизане
                     </button>
                   )}
                 </Menu.Item>

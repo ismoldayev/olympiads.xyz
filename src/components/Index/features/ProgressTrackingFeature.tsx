@@ -7,7 +7,7 @@ export const ProgressTrackingFeature = (): JSX.Element => {
         <div className="bg-white dark:bg-gray-800 shadow sm:rounded-lg">
           <div className="px-4 py-5 sm:p-6">
             <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-300">
-              Modules Progress
+              Напредък по модули
             </h3>
             <div className="mt-6">
               <div>
@@ -33,7 +33,7 @@ export const ProgressTrackingFeature = (): JSX.Element => {
                       2
                     </span>
                     <span className="block mt-1 text-sm font-medium uppercase text-blue-800 dark:text-blue-100">
-                      Skipped
+                      Прескочено
                     </span>
                   </div>
                   <div className="text-center">

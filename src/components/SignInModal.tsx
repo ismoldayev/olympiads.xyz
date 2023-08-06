@@ -157,14 +157,14 @@ export const SignInModal: React.FC<SignInModalProps> = ({
                   as="h3"
                   className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-200"
                 >
-                  Sign In
+                  Вход
                 </Dialog.Title>
                 <div className="mt-2">
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    Signing in allows you to sync your data with our servers
-                    (highly recommended). If this is your first time signing in,
-                    you will have the option to upload your local data to the
-                    server.
+                    Влизането в профил Ви позволява да синхронизирате данните си
+                    с нашите сървъри (силно препоръчително). Ако това е първият
+                    Ви вход, ще имате възможност да качите Вашите локални данни
+                    на сървъра.
                   </p>
                 </div>
               </div>
@@ -204,7 +204,7 @@ export const SignInModal: React.FC<SignInModalProps> = ({
                         <path fill="none" d="M0 0h48v48H0z" />
                       </g>
                     </svg>
-                    <span className="ml-3">Sign In With Google</span>
+                    <span className="ml-3">Вход с Google</span>
                   </button>
                   <button
                     type="button"
@@ -235,7 +235,7 @@ export const SignInModal: React.FC<SignInModalProps> = ({
                         </g>
                       </g>
                     </svg>
-                    <span className="ml-3">Sign In With Github</span>
+                    <span className="ml-3">Вход с Github</span>
                   </button>
                   {isSigningIn && <LoadingSpinner />}
                 </div>
@@ -249,8 +249,8 @@ export const SignInModal: React.FC<SignInModalProps> = ({
                 {isLinking && (
                   <div>
                     <p className="text-red-700 dark:text-red-300">
-                      An account with this email already exists, please sign in
-                      with Google to link the two accounts:
+                      Вече съществува профил с този имейл, моля влезте чрез
+                      Google, за да свържете двата профила:
                     </p>
                     <button
                       type="button"
@@ -258,7 +258,7 @@ export const SignInModal: React.FC<SignInModalProps> = ({
                       onClick={handleLinkAccounts}
                       // disabled={!firebaseApp || isSigningIn}
                     >
-                      Link Accounts
+                      Свържи профилите
                     </button>
                   </div>
                 )}
