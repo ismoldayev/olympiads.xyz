@@ -319,7 +319,7 @@ export default function TopNavigationBar({
                   aria-hidden="true"
                 />
 
-                <span className="ml-2 font-medium">Search</span>
+                <span className="ml-2 font-medium">Търсене</span>
               </button>
             </div>
             <div className="flex items-center lg:hidden">

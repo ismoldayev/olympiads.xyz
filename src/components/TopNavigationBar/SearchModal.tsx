@@ -57,7 +57,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                     className="px-5 py-4 text-gray-700 dark:text-gray-300"
                     ref={loadingFocusRef}
                   >
-                    Loading Search...
+                    Търсенето се зарежда...
                   </p>
                 }
               >

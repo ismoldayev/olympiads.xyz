@@ -17,7 +17,7 @@ export type Chapter = {
 const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
   general: [
     {
-      name: 'Getting Started',
+      name: 'Първи стъпки',
       description: "Start here if you're new to competitive programming.",
       items: [
         'using-this-guide',
@@ -36,7 +36,12 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
       items: ['contributing', 'adding-solution', 'modules', 'working-mdx'],
     },
     {
-      name: 'General Resources',
+      name: 'Подготвителни планове',
+      description: 'How you can add content to the guide.',
+      items: ['contributing', 'adding-solution', 'modules', 'working-mdx'],
+    },
+    {
+      name: 'Общи ресурси',
       description: 'Useful for competitors of all levels.',
       items: [
         'debugging-checklist',
@@ -48,7 +53,7 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
       ],
     },
     {
-      name: 'Language-Specific',
+      name: 'Математически апарат',
       description:
         'Setup instructions and discussion of language-specific features.',
       items: [
@@ -62,7 +67,7 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
       ],
     },
     {
-      name: 'USA',
+      name: 'Експерименти',
       description:
         'Information specific to USACO as well as USA camps and contests.',
       items: ['usaco-faq', 'usaco-monthlies', 'usaco-camp', 'resources-usa'],
@@ -70,23 +75,33 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
   ],
   mechanics: [
     {
-      name: 'Getting Started',
+      name: 'Кинематика',
       items: ['time-comp', 'intro-ds', 'simulation', 'rect-geo'],
     },
     {
-      name: 'Complete Search',
+      name: 'Статика',
       items: ['intro-complete', 'complete-rec'],
     },
     {
-      name: 'Sorting & Sets',
+      name: 'Динамика',
       items: ['intro-sorting', 'intro-sets'],
     },
     {
-      name: 'Additional',
+      name: 'Трептения',
       items: ['ad-hoc', 'intro-greedy', 'intro-graphs'],
     },
     {
-      name: 'Conclusion',
+      name: 'Въртене',
+      description: 'Congratulations on making it this far!',
+      items: ['mechanics-conclusion'],
+    },
+    {
+      name: 'Гравитация',
+      description: 'Congratulations on making it this far!',
+      items: ['mechanics-conclusion'],
+    },
+    {
+      name: 'Флуиди',
       description: 'Congratulations on making it this far!',
       items: ['mechanics-conclusion'],
     },
@@ -205,7 +220,7 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
   ],
   adv: [
     {
-      name: 'Data Structures',
+      name: 'Геометрия и време',
       items: [
         'springboards',
         'wavelet',
@@ -216,11 +231,11 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
       ],
     },
     {
-      name: 'Convexity',
+      name: 'Небесна сфера',
       items: ['line-container', 'lagrange', 'slope-trick'],
     },
     {
-      name: 'Graphs',
+      name: 'Небесна механика',
       items: [
         'sp-neg',
         'eulerian-tours',
@@ -233,19 +248,19 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
       ],
     },
     {
-      name: 'Dynamic Programming',
+      name: 'Оптика',
       items: ['comb-sub', 'dp-more', 'dp-sos'],
     },
     {
-      name: 'Flows',
+      name: 'Частици и полета',
       items: ['max-flow', 'min-cut', 'flow-lb', 'min-cost-flow'],
     },
     {
-      name: 'Polynomials',
+      name: 'Закони за излъчване',
       items: ['fft', 'fft-ext'],
     },
     {
-      name: 'Strings',
+      name: 'Галактики, космология',
       items: ['string-search', 'suffix-array', 'string-suffix'],
     },
     {
@@ -290,11 +305,11 @@ export const SECTION_SEO_DESCRIPTION: { [key in SectionID]: string } = {
 };
 export const SECTION_SEO_TITLES: { [key in SectionID]: string } = {
   general: 'Обща информация за Olympiads.xyz',
-  mechanics: 'Задачи по механика',
-  electromagnetism: 'Задачи по електромагнетизъм',
-  thermodynamics: 'Задачи по термодинамика',
-  plat: 'Задачи по модерна физика',
-  adv: 'Задачи по астрономия',
+  mechanics: 'Теми по механика',
+  electromagnetism: 'Теми по електромагнетизъм',
+  thermodynamics: 'Теми по термодинамика',
+  plat: 'Теми по модерна физика',
+  adv: 'Теми по астрономия',
 };
 
 const moduleIDToSectionMap: { [key: string]: SectionID } = {};

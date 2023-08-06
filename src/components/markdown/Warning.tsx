@@ -29,7 +29,7 @@ const Warning: React.FC<WarningProps> = ({ children, title }) => (
       </div>
       <div className="ml-3">
         <h3 className="text-sm leading-5 font-medium text-yellow-800 dark:text-yellow-200">
-          Warning{title ? ': ' + title : '!'}
+          Внимание{title ? ': ' + title : '!'}
         </h3>
         <div className="mt-2 text-sm leading-5 text-yellow-700 dark:text-yellow-300 no-y-margin tailwind-alert tailwind-alert--warning">
           {children}

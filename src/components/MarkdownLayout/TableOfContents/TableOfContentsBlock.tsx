@@ -17,7 +17,7 @@ const TableOfContentsBlock = ({
       {tableOfContents.length > 1 && (
         <>
           <h2 className="uppercase text-gray-500 dark:text-dark-high-emphasis font-bold mt-8 mb-3 tracking-wider">
-            Table of Contents
+            Съдържание
           </h2>
           {links}
         </>

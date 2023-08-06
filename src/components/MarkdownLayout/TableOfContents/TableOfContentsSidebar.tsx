@@ -25,7 +25,7 @@ const TableOfContentsSidebar = ({
   return (
     <div className="sticky" style={{ top: '2.5rem' }}>
       <h2 className="uppercase text-gray-500 dark:text-dark-med-emphasis font-bold mb-4 text-sm tracking-wider">
-        Table of Contents
+        Съдържание
       </h2>
       {links}
 

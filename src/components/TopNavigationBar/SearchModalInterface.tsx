@@ -47,7 +47,7 @@ const ModuleSearch = ({ hits, currentRefinement, refine }) => {
       <div className="flex items-center p-2">
         <input
           type="search"
-          placeholder="Search"
+          placeholder="Търсене"
           className="focus:outline-none focus:ring-0 text-gray-700 dark:bg-dark-surface dark:text-gray-200 dark:placeholder-gray-400 border-0 flex-1"
           value={currentRefinement}
           onChange={e => refine(e.target.value)}
