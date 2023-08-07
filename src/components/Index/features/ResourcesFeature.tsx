@@ -58,7 +58,7 @@ export const ResourcesFeature = (): JSX.Element => {
                         colSpan={3}
                         className={`px-4 sm:px-6 border-b text-left font-medium text-sm uppercase py-3 border-gray-200 dark:border-transparent bg-purple-50 text-purple-500 dark:bg-purple-700 dark:bg-opacity-25 dark:text-purple-200`}
                       >
-                        Resources
+                        Ресурси
                       </th>
                     </tr>
                   </thead>

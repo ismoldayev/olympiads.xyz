@@ -18,7 +18,7 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
   general: [
     {
       name: 'Първи стъпки',
-      description: "Start here if you're new to competitive programming.",
+      description: 'Започнете оттук ако сте начинаещ олимпиец.',
       items: [
         'using-this-guide',
         'intro-cp',
@@ -31,8 +31,8 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
       ],
     },
     {
-      name: 'Contributing',
-      description: 'How you can add content to the guide.',
+      name: 'Съдействие',
+      description: 'Как можете да подкрепите проекта.',
       items: ['contributing', 'adding-solution', 'modules', 'working-mdx'],
     },
     {
