@@ -223,7 +223,7 @@ export default function TopNavigationBar({
                             'group inline-flex items-center h-full border-b-2 border-transparent space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900  transition ease-in-out duration-150 dark:text-dark-high-emphasis'
                           )}
                         >
-                          <span className="mt-0.5">Resources</span>
+                          <span className="mt-0.5">Ресурси</span>
                           <ChevronDownIcon
                             className={classNames(
                               open ? 'text-gray-500' : 'text-gray-400',

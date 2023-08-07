@@ -16,8 +16,8 @@ export default function ModuleProgressUpdateBanner() {
     return (
       <h3 className="text-lg leading-6 font-medium text-gray-900 text-center mb-8 border-t border-b border-gray-200 py-8 dark:border-gray-800 dark:text-dark-high-emphasis flex items-center justify-center">
         <span>
-          <TextTooltip content="You can use this as a way to track your progress throughout this guide.">
-            Module Progress
+          <TextTooltip content="Можете да използвате този бутон, за да следите прогреса си в този сайт.">
+            Напредък по модула
           </TextTooltip>
           :
         </span>

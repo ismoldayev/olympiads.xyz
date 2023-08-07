@@ -15,7 +15,7 @@ const Breadcrumbs = () => {
         to="/dashboard/"
         className="hover:text-gray-700 dark:hover:text-dark-high-emphasis transition"
       >
-        Home
+        Начало
       </Link>
       <svg
         className="flex-shrink-0 mx-2 h-5 w-5 text-gray-400"

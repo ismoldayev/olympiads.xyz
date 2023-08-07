@@ -20,7 +20,7 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
       name: 'Първи стъпки',
       description: 'Започнете оттук ако сте начинаещ олимпиец.',
       items: [
-        'using-this-guide',
+        'introduction',
         'intro-cp',
         'choosing-lang',
         'resources-learning-to-code',
@@ -38,7 +38,13 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
     {
       name: 'Подготвителни планове',
       description: 'How you can add content to the guide.',
-      items: ['contributing', 'adding-solution', 'modules', 'working-mdx'],
+      items: [
+        'plan-geo-int',
+        'contributing',
+        'adding-solution',
+        'modules',
+        'working-mdx',
+      ],
     },
     {
       name: 'Общи ресурси',
@@ -130,7 +136,7 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
     },
     {
       name: 'Additional Topics',
-      items: ['intro-bitwise'],
+      items: ['intro-tree', 'intro-bitwise'],
     },
     {
       name: 'Conclusion',

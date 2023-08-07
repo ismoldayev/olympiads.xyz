@@ -86,20 +86,19 @@ export default function ModuleHeaders({
 
   return (
     <>
-      {markdownData instanceof ModuleInfo &&
-        markdownData.frequency !== null && (
-          <div className="px-0.5">
-            <div className="sm:flex sm:items-center sm:justify-between mb-4 space-y-1 sm:space-y-0">
-              <Frequency frequency={markdownData.frequency} />
-              {problemIDs.length > 0 && (
-                <DashboardProgressSmall
-                  {...problemsProgressInfo}
-                  total={problemIDs.length}
-                />
-              )}
-            </div>
+      {markdownData instanceof ModuleInfo && markdownData.frequency !== null && (
+        <div className="px-0.5">
+          <div className="sm:flex sm:items-center sm:justify-between mb-4 space-y-1 sm:space-y-0">
+            <Frequency frequency={markdownData.frequency} />
+            {problemIDs.length > 0 && (
+              <DashboardProgressSmall
+                {...problemsProgressInfo}
+                total={problemIDs.length}
+              />
+            )}
           </div>
-        )}
+        </div>
+      )}
       <div className="sm:flex sm:items-center sm:justify-between mb-4">
         <div className="flex-1 min-w-0">
           <h1 className="text-2xl font-bold text-gray-900 dark:text-dark-high-emphasis sm:text-3xl">
@@ -107,15 +106,15 @@ export default function ModuleHeaders({
           </h1>
           {markdownData.author && (
             <p className={`text-gray-500 dark:text-dark-med-emphasis mt-1`}>
-              Author
-              {markdownData.author.indexOf(',') !== -1 ? 's' : ''}:{' '}
+              Автор
+              {markdownData.author.indexOf(',') !== -1 ? 'и' : ''}:{' '}
               {markdownData.author}
             </p>
           )}
           {markdownData instanceof ModuleInfo && markdownData.contributors && (
             <p className={`text-gray-500 dark:text-dark-med-emphasis text-xs`}>
-              Contributor
-              {markdownData.contributors.indexOf(',') !== -1 ? 's' : ''}:{' '}
+              Редактор
+              {markdownData.contributors.indexOf(',') !== -1 ? 'и' : ''}:{' '}
               {markdownData.contributors}
             </p>
           )}
@@ -207,7 +206,7 @@ export default function ModuleHeaders({
             to={`/editor?filepath=${getSuffix()}`}
             className="text-sm font-medium text-gray-600 hover:text-gray-900 my-0 dark:text-gray-400 dark:hover:text-gray-100 group inline-flex items-center space-x-1.5"
           >
-            <span>Edit This Page</span>
+            <span>Редактирай тази страница</span>
             <ExternalLinkIcon className="h-5 w-5 text-gray-400 group-hover:text-gray-600 dark:text-gray-500 dark:group-hover:text-gray-300" />
           </Link>
         </div>

@@ -62,7 +62,7 @@ const NavBar = ({ alignNavButtonsRight = true }) => {
           >
             <path d="M15 19l-7-7 7-7" />
           </svg>
-          Prev
+          Назад
         </Link>
       </span>
       <div className="hidden sm:flex items-center">
@@ -76,7 +76,7 @@ const NavBar = ({ alignNavButtonsRight = true }) => {
             (nextModule === null ? disabledClasses : activeClasses)
           }
         >
-          Next
+          Напред
           <svg
             className="-mr-0.5 ml-1 h-4 w-4"
             fill="none"

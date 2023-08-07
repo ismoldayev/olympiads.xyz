@@ -23,7 +23,7 @@ export class ModuleLinkInfo {
     public probs?: any,
     public gitAuthorTime?: any
   ) {
-    if (this.id === 'using-this-guide') {
+    if (this.id === 'introduction') {
       // The "Using This Guide" module is complete already, but it contains an <IncompleteModule> tag
       // We want to ignore it and manually mark it as complete
       this.isIncomplete = false;

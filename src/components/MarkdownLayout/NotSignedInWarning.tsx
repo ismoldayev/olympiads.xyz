@@ -83,12 +83,12 @@ export default function NotSignedInWarning() {
         <div className="bg-gray-50 dark:bg-gray-900 sm:rounded-lg">
           <div className="px-4 py-5 sm:p-6">
             <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-dark-high-emphasis">
-              You're not signed in!
+              Не сте влезли в профила си!
             </h3>
             <div className="mt-2 max-w-xl text-sm leading-5 text-gray-500 dark:text-dark-med-emphasis">
               <p>
-                Sign in to save your progress and sync your settings across
-                devices.
+                Влезте в профил, за да съхраните прогреса си и да синхронизирате
+                настройките си между устройства.
               </p>
             </div>
             <div className="mt-5">
@@ -98,7 +98,7 @@ export default function NotSignedInWarning() {
                   onClick={() => signIn()}
                   className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm leading-5 font-medium rounded-md text-gray-700 dark:text-dark-high-emphasis bg-white dark:bg-gray-800 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150"
                 >
-                  Sign in
+                  Вход
                 </button>
               </span>
             </div>
