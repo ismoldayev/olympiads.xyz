@@ -1,18 +1,22 @@
 import { Popover, Transition } from '@headlessui/react';
 import {
   AcademicCapIcon,
-  BookmarkIcon,
+  ArchiveIcon,
   ChartBarIcon,
   ChatAlt2Icon,
   ChatAltIcon,
   ChevronDownIcon,
   CogIcon,
   ExternalLinkIcon,
+  FireIcon,
+  LightningBoltIcon,
   LoginIcon,
   LogoutIcon,
+  MoonIcon,
   PresentationChartLineIcon,
-  QuestionMarkCircleIcon,
+  ScaleIcon,
   SearchIcon,
+  StatusOnlineIcon,
   TerminalIcon,
   UserGroupIcon,
 } from '@heroicons/react/solid';
@@ -111,39 +115,39 @@ export default function TopNavigationBar({
 
   const solutions = [
     {
-      name: 'General',
+      name: 'Общи',
       href: '/general',
-      icon: BookmarkIcon,
+      icon: AcademicCapIcon,
       key: 'general',
     },
     {
-      name: 'Mechanics',
+      name: 'Механика',
       href: '/mechanics',
-      icon: BookmarkIcon,
+      icon: ScaleIcon,
       key: 'mechanics',
     },
     {
-      name: 'Electromagnetism',
+      name: 'Електромагнетизъм',
       href: '/electromagnetism',
-      icon: BookmarkIcon,
+      icon: LightningBoltIcon,
       key: 'electromagnetism',
     },
     {
-      name: 'Thermodynamics',
+      name: 'Термодинамика',
       href: '/thermodynamics',
-      icon: BookmarkIcon,
+      icon: FireIcon,
       key: 'thermodynamics',
     },
     {
-      name: 'Modern',
+      name: 'Модерна физика',
       href: '/plat',
-      icon: BookmarkIcon,
+      icon: StatusOnlineIcon,
       key: 'plat',
     },
     {
-      name: 'Advanced',
+      name: 'Астрономия',
       href: '/adv',
-      icon: BookmarkIcon,
+      icon: MoonIcon,
       key: 'adv',
     },
   ];
@@ -255,7 +259,7 @@ export default function TopNavigationBar({
                                   </div>
                                   <div className="ml-4">
                                     <p className="text-base font-medium text-gray-900 dark:text-dark-high-emphasis">
-                                      Groups
+                                      Групи
                                     </p>
                                     <p className="mt-1 text-sm text-gray-500 dark:text-dark-med-emphasis">
                                       A Learning Management System fully
@@ -451,7 +455,7 @@ export default function TopNavigationBar({
                     aria-hidden="true"
                   />
                   <span className="ml-3 text-base font-medium text-gray-700 dark:text-gray-300">
-                    Groups
+                    Групи
                   </span>
                 </Link>
                 {resources.map(item => (
@@ -480,7 +484,7 @@ export default function TopNavigationBar({
                   to="/problems"
                   className="group -m-3 p-3 flex items-center rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <QuestionMarkCircleIcon
+                  <ArchiveIcon
                     className="flex-shrink-0 h-6 w-6 text-gray-600 dark:group-hover:text-gray-400"
                     aria-hidden="true"
                   />
@@ -510,7 +514,7 @@ export default function TopNavigationBar({
                     aria-hidden="true"
                   />
                   <span className="ml-3 text-base font-medium text-gray-700 dark:text-gray-300">
-                    Settings
+                    Настройки
                   </span>
                 </Link>
                 {firebaseUser ? (
@@ -523,7 +527,7 @@ export default function TopNavigationBar({
                       aria-hidden="true"
                     />
                     <span className="ml-3 text-base font-medium text-gray-700 dark:text-gray-300">
-                      Sign Out
+                      Излизане
                     </span>
                   </a>
                 ) : (
@@ -536,7 +540,7 @@ export default function TopNavigationBar({
                       aria-hidden="true"
                     />
                     <span className="ml-3 text-base font-medium text-gray-700 dark:text-gray-300">
-                      Sign In
+                      Вход
                     </span>
                   </a>
                 )}
