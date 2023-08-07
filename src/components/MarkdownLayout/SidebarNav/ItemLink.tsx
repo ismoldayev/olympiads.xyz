@@ -105,7 +105,7 @@ const ItemLink = ({ link }: { link: ModuleLinkInfo }) => {
   }, [isActive]);
 
   const { userProgressOnModules } = useContext(UserDataContext);
-  const progress = userProgressOnModules[link.id] || 'Незапочнато';
+  const progress = userProgressOnModules[link.id] || 'Незапочнат';
 
   let lineColorStyle = tw`bg-gray-200`;
   let dotColorStyle = tw`bg-gray-200`;
@@ -121,35 +121,35 @@ const ItemLink = ({ link }: { link: ModuleLinkInfo }) => {
     darkDotColorStyle = tw`bg-blue-400`;
   }
 
-  if (progress === 'Reading') {
+  if (progress === 'Чета') {
     lineColorStyle = tw`bg-yellow-300`;
     dotColorStyle = tw`bg-yellow-300`;
     darkLineColorStyle = tw`bg-yellow-400`;
     darkDotColorStyle = tw`bg-yellow-400`;
     activeTextStyle = tw`text-yellow-700 font-medium`;
     darkActiveTextStyle = tw`text-yellow-400 font-medium`;
-  } else if (progress === 'Practicing') {
+  } else if (progress === 'Упражнявам') {
     lineColorStyle = tw`bg-orange-400`;
     dotColorStyle = tw`bg-orange-400`;
     darkLineColorStyle = tw`bg-orange-500`;
     darkDotColorStyle = tw`bg-orange-500`;
     activeTextStyle = tw`text-orange-700 font-medium`;
     darkActiveTextStyle = tw`text-orange-400 font-medium`;
-  } else if (progress === 'Завършено') {
+  } else if (progress === 'Завършен') {
     lineColorStyle = tw`bg-green-400`;
     dotColorStyle = tw`bg-green-400`;
     darkLineColorStyle = tw`bg-green-400`;
     darkDotColorStyle = tw`bg-green-400`;
     activeTextStyle = tw`text-green-700 font-medium`;
     darkActiveTextStyle = tw`text-green-400 font-medium`;
-  } else if (progress === 'Прескоченo') {
+  } else if (progress === 'Прескочен') {
     lineColorStyle = tw`bg-blue-300`;
     dotColorStyle = tw`bg-blue-300`;
     darkLineColorStyle = tw`bg-blue-700`;
     darkDotColorStyle = tw`bg-blue-700`;
     activeTextStyle = tw`text-blue-700 font-medium`;
     darkActiveTextStyle = tw`text-blue-400 font-medium`;
-  } else if (progress === 'Игнорирано') {
+  } else if (progress === 'Игнориран') {
     lineColorStyle = tw`bg-gray-100`;
     dotColorStyle = tw`bg-gray-100`;
     darkLineColorStyle = tw`bg-gray-800`;
@@ -176,14 +176,14 @@ const ItemLink = ({ link }: { link: ModuleLinkInfo }) => {
           $textStyle={
             isActive
               ? activeTextStyle
-              : progress === 'Игнорирано'
+              : progress === 'Игнориран'
               ? tw`text-gray-400`
               : tw`text-gray-600`
           }
           $darkTextStyle={
             isActive
               ? darkActiveTextStyle
-              : progress === 'Игнорирано'
+              : progress === 'Игнориран'
               ? tw`text-gray-600`
               : tw`text-dark-med-emphasis`
           }

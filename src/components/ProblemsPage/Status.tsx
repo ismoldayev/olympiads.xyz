@@ -4,12 +4,12 @@ import { useDarkMode } from '../../context/DarkModeContext';
 import UserDataContext from '../../context/UserDataContext/UserDataContext';
 
 const options = [
-  { label: 'Not Attempted', value: 'Not Attempted' },
-  { label: 'Solving', value: 'Solving' },
-  { label: 'Решено', value: 'Решено' },
-  { label: 'Reviewing', value: 'Reviewing' },
-  { label: 'Прескоченo', value: 'Прескоченo' },
-  { label: 'Игнорирано', value: 'Игнорирано' },
+  { label: 'Незапочната', value: 'Незапочната' },
+  { label: 'Решавам', value: 'Решавам' },
+  { label: 'Решена', value: 'Решена' },
+  { label: 'Преглеждам', value: 'Преглеждам' },
+  { label: 'Прескочен', value: 'Прескочен' },
+  { label: 'Игнорирана', value: 'Игнорирана' },
 ];
 
 export default function Status({ refine, problemIds }): JSX.Element {
@@ -19,7 +19,7 @@ export default function Status({ refine, problemIds }): JSX.Element {
     const refinements = [];
     for (const status of e) {
       for (const key of problemIds) {
-        if ((data[key] ?? 'Not Attempted') == status.label) {
+        if ((data[key] ?? 'Незапочната') == status.label) {
           refinements.push(key);
         }
       }

@@ -27,24 +27,24 @@ const ProgressDropdown = ({ onProgressSelected, currentProgress }) => {
   const icon = (status: ResourceProgress, equal: boolean) => {
     const colorMap: { [key in ResourceProgress]: string } = {
       'Not Started': '',
-      Reading: 'text-yellow-300',
-      Practicing: 'text-orange-500',
-      Завършено: 'text-green-400',
-      Прескочено: 'text-blue-400',
-      Игнорирано: 'text-purple-400',
+      Чета: 'text-yellow-300',
+      Упражнявам: 'text-orange-500',
+      Завършен: 'text-green-400',
+      Прескочен: 'text-blue-400',
+      Игнориран: 'text-purple-400',
     };
     const pathMap: { [key in ResourceProgress]: JSX.Element } = {
       'Not Started': <> </>,
-      Reading: (
+      Чета: (
         <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
       ),
-      Practicing: (
+      Упражнявам: (
         <path d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" />
       ),
-      Завършено: (
+      Завършен: (
         <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
       ),
-      Прескочено: (
+      Прескочен: (
         <>
           <path
             fillRule="evenodd"
@@ -58,7 +58,7 @@ const ProgressDropdown = ({ onProgressSelected, currentProgress }) => {
           />
         </>
       ),
-      Игнорирано: (
+      Игнориран: (
         <path
           fillRule="evenodd"
           d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -141,7 +141,7 @@ export default function ResourcestatusCheckbox({
     useContext(UserDataContext);
   const { userProgressOnResources, setUserProgressOnResources } =
     useContext(UserDataContext);
-  const updateResourceProgressToPracticing = () => {
+  const updateResourceProgressToУпражнявам = () => {
     if (
       markdownLayoutContext === null ||
       !markdownLayoutContext.markdownLayoutInfo?.id
@@ -153,18 +153,18 @@ export default function ResourcestatusCheckbox({
       (userProgressOnModules && userProgressOnModules[markdownLayoutInfo.id]) ||
       'Not Started';
     if (moduleProgress !== 'Not Started') return;
-    setModuleProgress(markdownLayoutInfo.id, 'Reading');
+    setModuleProgress(markdownLayoutInfo.id, 'Чета');
   };
   const status: ResourceProgress =
     userProgressOnResources[replaceIllegalFirebaseCharacters(resource.url)] ||
     'Not Started';
   const color: { [key in ResourceProgress]: string } = {
     'Not Started': 'bg-gray-200 dark:bg-gray-700',
-    Reading: 'bg-yellow-300 dark:bg-yellow-500',
-    Practicing: 'bg-orange-400 dark:bg-orange-600',
-    Завършено: 'bg-green-500 dark:bg-green-600',
-    Прескочено: 'bg-blue-300 dark:bg-blue-700',
-    Игнорирано: 'bg-red-100 dark:bg-red-900',
+    Чета: 'bg-yellow-300 dark:bg-yellow-500',
+    Упражнявам: 'bg-orange-400 dark:bg-orange-600',
+    Завършен: 'bg-green-500 dark:bg-green-600',
+    Прескочен: 'bg-blue-300 dark:bg-blue-700',
+    Игнориран: 'bg-red-100 dark:bg-red-900',
   };
   const tippyRef = useRef<any>();
   const showConfetti = useContext(ConfettiContext);
@@ -177,11 +177,11 @@ export default function ResourcestatusCheckbox({
             onProgressSelected={progress => {
               tippyRef.current.hide();
               setUserProgressOnResources(resource.url, progress);
-              const Practicing = x => x == 'Завършено' || x == 'Practicing';
-              if (progress == 'Reading' || Practicing(progress)) {
-                updateResourceProgressToPracticing();
+              const Упражнявам = x => x == 'Завършен' || x == 'Упражнявам';
+              if (progress == 'Чета' || Упражнявам(progress)) {
+                updateResourceProgressToУпражнявам();
               }
-              if (!Practicing(status) && Practicing(progress)) {
+              if (!Упражнявам(status) && Упражнявам(progress)) {
                 showConfetti();
               }
             }}

@@ -169,34 +169,34 @@ function timeAgoString(time): string {
 
 const ModuleLink = ({ link }: { link: ModuleLinkInfo }): JSX.Element => {
   const { userProgressOnModules } = useContext(UserDataContext);
-  const progress = userProgressOnModules[link.id] || 'Незапочнато';
+  const progress = userProgressOnModules[link.id] || 'Незапочнат';
 
   let lineColorStyle = tw`bg-gray-200`;
   let dotColorStyle = tw`bg-gray-200`;
   let darkLineColorStyle = tw`bg-gray-700`;
   let darkDotColorStyle = tw`bg-gray-700`;
 
-  if (progress === 'Reading') {
+  if (progress === 'Чета') {
     lineColorStyle = tw`bg-yellow-300`;
     dotColorStyle = tw`bg-yellow-300`;
     darkLineColorStyle = tw`bg-yellow-400`;
     darkDotColorStyle = tw`bg-yellow-400`;
-  } else if (progress === 'Practicing') {
+  } else if (progress === 'Упражнявам') {
     lineColorStyle = tw`bg-orange-400`;
     dotColorStyle = tw`bg-orange-400`;
     darkLineColorStyle = tw`bg-orange-500`;
     darkDotColorStyle = tw`bg-orange-500`;
-  } else if (progress === 'Завършено') {
+  } else if (progress === 'Завършен') {
     lineColorStyle = tw`bg-green-400`;
     dotColorStyle = tw`bg-green-400`;
     darkLineColorStyle = tw`bg-green-400`;
     darkDotColorStyle = tw`bg-green-400`;
-  } else if (progress === 'Прескоченo') {
+  } else if (progress === 'Прескочен') {
     lineColorStyle = tw`bg-blue-300`;
     dotColorStyle = tw`bg-blue-300`;
     darkLineColorStyle = tw`bg-blue-700`;
     darkDotColorStyle = tw`bg-blue-700`;
-  } else if (progress === 'Игнорирано') {
+  } else if (progress === 'Игнориран') {
     lineColorStyle = tw`bg-gray-100`;
     dotColorStyle = tw`bg-gray-100`;
     darkLineColorStyle = tw`bg-gray-800`;
@@ -217,13 +217,13 @@ const ModuleLink = ({ link }: { link: ModuleLinkInfo }): JSX.Element => {
       dotColorStyle={dotColorStyle}
       darkLineColorStyle={darkLineColorStyle}
       darkDotColorStyle={darkDotColorStyle}
-      small={progress === 'Незапочнато' || progress === 'Игнорирано'}
+      small={progress === 'Незапочнат' || progress === 'Игнориран'}
     >
       <Link to={link.url}>
         <StyledLink className="group">
           <p
             className={`${
-              progress === 'Игнорирано'
+              progress === 'Игнориран'
                 ? 'text-gray-400 dark:text-gray-600'
                 : 'text-gray-700 dark:text-gray-400'
             } group-hover:text-blue-800 dark:group-hover:text-dark-high-emphasis transition mb-1 flex items-center`}

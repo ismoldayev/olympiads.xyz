@@ -27,8 +27,8 @@ export default function Activity() {
   const moduleIDs = [];
   for (const activity of userProgressOnModulesActivity) {
     if (
-      activity.moduleProgress === 'Practicing' ||
-      activity.moduleProgress === 'Завършено'
+      activity.moduleProgress === 'Упражнявам' ||
+      activity.moduleProgress === 'Завършен'
     ) {
       const newDate = new Date(activity.timestamp);
       newDate.setHours(0, 0, 0, 0);
@@ -52,7 +52,7 @@ export default function Activity() {
 
   const problemIDs = [];
   for (const activity of userProgressOnProblemsActivity) {
-    if (activity.problemProgress === 'Решено') {
+    if (activity.problemProgress === 'Решена') {
       const newDate = new Date(activity.timestamp);
       newDate.setHours(0, 0, 0, 0);
       if (

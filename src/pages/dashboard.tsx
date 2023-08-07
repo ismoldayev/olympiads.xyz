@@ -99,10 +99,10 @@ export default function DashboardPage(props: PageProps) {
     return Object.keys(userProgressOnModules)
       .filter(
         x =>
-          (userProgressOnModules[x] === 'Reading' ||
-            userProgressOnModules[x] === 'Practicing' ||
-            userProgressOnModules[x] === 'Прескоченo' ||
-            (showIgnored && userProgressOnModules[x] === 'Игнорирано')) &&
+          (userProgressOnModules[x] === 'Чета' ||
+            userProgressOnModules[x] === 'Упражнявам' ||
+            userProgressOnModules[x] === 'Прескочен' ||
+            (showIgnored && userProgressOnModules[x] === 'Игнориран')) &&
           moduleIDToSectionMap.hasOwnProperty(x)
       )
       .map(x => ({
@@ -111,30 +111,30 @@ export default function DashboardPage(props: PageProps) {
         }`,
         url: moduleIDToURLMap[x],
         status: userProgressOnModules[x] as
-          | 'Прескоченo'
-          | 'Reading'
-          | 'Practicing'
-          | 'Игнорирано',
+          | 'Прескочен'
+          | 'Чета'
+          | 'Упражнявам'
+          | 'Игнориран',
       }));
   }, [userProgressOnModules, showIgnored]);
   const activeProblems: ActiveItem[] = React.useMemo(() => {
     return Object.keys(userProgressOnProblems)
       .filter(
         x =>
-          (userProgressOnProblems[x] === 'Reviewing' ||
-            userProgressOnProblems[x] === 'Solving' ||
-            userProgressOnProblems[x] === 'Прескоченo' ||
-            (showIgnored && userProgressOnProblems[x] === 'Игнорирано')) &&
+          (userProgressOnProblems[x] === 'Преглеждам' ||
+            userProgressOnProblems[x] === 'Решавам' ||
+            userProgressOnProblems[x] === 'Прескочен' ||
+            (showIgnored && userProgressOnProblems[x] === 'Игнориран')) &&
           problemIDMap.hasOwnProperty(x)
       )
       .map(x => ({
         label: problemIDMap[x].label,
         url: problemIDMap[x].modules[0].url,
         status: userProgressOnProblems[x] as
-          | 'Reviewing'
-          | 'Solving'
-          | 'Прескоченo'
-          | 'Игнорирано',
+          | 'Преглеждам'
+          | 'Решавам'
+          | 'Прескочена'
+          | 'Игнорирана',
       }));
   }, [userProgressOnProblems, showIgnored]);
 

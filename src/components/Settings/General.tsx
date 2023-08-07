@@ -85,7 +85,7 @@ export default function General(): JSX.Element {
                 className="text-sm font-medium text-gray-500 dark:text-gray-300"
                 id="privacy-option-2-label"
               >
-                Dashboard: Show Игнорирано Problems & Modules
+                Dashboard: Show Игнориран Problems & Modules
               </p>
             </div>
             <Switch checked={showIgnored} onChange={b => setShowIgnored(b)} />

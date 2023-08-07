@@ -164,7 +164,7 @@ export default function ContactUsSlideover({
     <SlideoverForm
       isOpen={isOpen}
       onClose={onClose}
-      title="Contact Us"
+      title="Връзка с нас"
       subtitle={
         <>
           Contact us about anything: suggestions, bugs, assistance, and more!
@@ -193,7 +193,7 @@ export default function ContactUsSlideover({
               disabled={!submitEnabled}
               className={`btn-primary`}
             >
-              Contact Us
+              Връзка с нас
             </button>
           </span>
         </>

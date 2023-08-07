@@ -69,7 +69,7 @@ export default function ProblemSolutions({
           className="my-4 mx-3 btn-primary"
           onClick={() => setIsContactUsActive(true)}
         >
-          Contact Us
+          Връзка с нас
         </button>
         <ContactUsSlideover
           isOpen={isContactUsActive}

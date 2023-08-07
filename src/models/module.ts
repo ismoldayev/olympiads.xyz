@@ -66,18 +66,18 @@ export class ModuleInfo extends ModuleLinkInfo {
 }
 
 export type ModuleProgress =
-  | 'Незапочнато'
-  | 'Reading'
-  | 'Practicing'
-  | 'Завършено'
-  | 'Прескоченo'
-  | 'Игнорирано';
+  | 'Незапочнат'
+  | 'Чета'
+  | 'Упражнявам'
+  | 'Завършен'
+  | 'Прескочен'
+  | 'Игнориран';
 
 export const ModuleProgressOptions: ModuleProgress[] = [
-  'Незапочнато',
-  'Reading',
-  'Practicing',
-  'Завършено',
-  'Прескоченo',
-  'Игнорирано',
+  'Незапочнат',
+  'Чета',
+  'Упражнявам',
+  'Завършен',
+  'Прескочен',
+  'Игнориран',
 ];

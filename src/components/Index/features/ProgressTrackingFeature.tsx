@@ -33,7 +33,7 @@ export const ProgressTrackingFeature = (): JSX.Element => {
                       2
                     </span>
                     <span className="block mt-1 text-sm font-medium uppercase text-blue-800 dark:text-blue-100">
-                      Прескочено
+                      Прескочен
                     </span>
                   </div>
                   <div className="text-center">
