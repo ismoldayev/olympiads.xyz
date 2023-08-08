@@ -41,7 +41,7 @@ export default function TopNavigationBar({
   transparent = false,
   linkLogoToIndex = false,
   currentSection = null,
-  hideClassesPromoBar = false,
+  hideClassesPromoBar = true,
 }) {
   const { firebaseUser, signOut, isLoaded, userProgressOnModules } =
     useContext(UserDataContext);
@@ -160,17 +160,16 @@ export default function TopNavigationBar({
             <div className="pr-16 sm:text-center sm:px-16">
               <p className="font-medium text-white">
                 <span className="md:inline">
-                  We're looking for instructors for USACO Mechanics and
-                  Electromagnetism classes!
+                  Търсим преподаватели по физика за Olympids School!
                 </span>
                 <span className="block sm:ml-2 sm:inline-block">
                   <a
-                    href="https://forms.gle/YbPR1J3caZW3pV5r6"
+                    href=""
                     target="_blank"
                     rel="noreferrer"
                     className="text-white font-bold underline"
                   >
-                    Apply here&rarr;
+                    Кандидатсвай тук&rarr;
                   </a>
                 </span>
               </p>

@@ -600,7 +600,7 @@ export default function IndexPage(): JSX.Element {
                       </a>
                       . Check out the{' '}
                       <Link
-                        to="/general/usaco-faq"
+                        to="/general/faq"
                         className="text-blue-600 dark:text-blue-400 underline"
                       >
                         USACO FAQ Page

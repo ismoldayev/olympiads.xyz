@@ -1,9 +1,7 @@
-import { Menu, Transition } from '@headlessui/react';
-import { ChevronDownIcon, ExternalLinkIcon } from '@heroicons/react/solid';
-import classNames from 'classnames';
+import { ExternalLinkIcon } from '@heroicons/react/solid';
 import { Link } from 'gatsby';
 import * as React from 'react';
-import { Fragment, useContext } from 'react';
+import { useContext } from 'react';
 // import { SolutionInfo } from '../../models/solution';
 import {
   moduleIDToSectionMap,
@@ -13,10 +11,6 @@ import {
 import MarkdownLayoutContext from '../../../context/MarkdownLayoutContext';
 import { useMarkdownProblems } from '../../../context/MarkdownProblemListsContext';
 import { ProblemSolutionContext } from '../../../context/ProblemSolutionContext';
-import {
-  Language,
-  LANGUAGE_LABELS,
-} from '../../../context/UserDataContext/properties/userLang';
 import UserDataContext from '../../../context/UserDataContext/UserDataContext';
 import { ModuleInfo, ModuleLinkInfo } from '../../../models/module';
 import { getProblemsProgressInfo } from '../../../utils/getProgressInfo';
@@ -147,6 +141,7 @@ export default function ModuleHeaders({
 
       <div className="rounded-md bg-gray-50 dark:bg-gray-900 px-4 py-5 sm:p-6 mb-4">
         <div className="flex items-center justify-between">
+          {/*
           <Menu as="div" className="inline-block text-left relative">
             {({ open }) => (
               <>
@@ -201,7 +196,7 @@ export default function ModuleHeaders({
               </>
             )}
           </Menu>
-
+          */}
           <Link
             to={`/editor?filepath=${getSuffix()}`}
             className="text-sm font-medium text-gray-600 hover:text-gray-900 my-0 dark:text-gray-400 dark:hover:text-gray-100 group inline-flex items-center space-x-1.5"
@@ -216,8 +211,8 @@ export default function ModuleHeaders({
             <div className="h-4 sm:h-6" />
             <h3 className="text-sm leading-5 font-medium text-gray-800 my-0 dark:text-gray-200">
               {markdownData instanceof ModuleInfo
-                ? 'Prerequisites'
-                : 'Appears In'}
+                ? 'Предварителни изисквания'
+                : 'Появява се в'}
             </h3>
             <div className="text-sm leading-5 text-gray-700 mt-1 no-y-margin dark:text-gray-300">
               <ul className="list-disc list-inside pl-3 space-y-1">

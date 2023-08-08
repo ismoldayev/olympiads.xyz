@@ -14,7 +14,6 @@ import { updateLangURL } from '../../context/UserDataContext/properties/userLang
 import UserDataContext from '../../context/UserDataContext/UserDataContext';
 import { ModuleInfo } from '../../models/module';
 import { SolutionInfo } from '../../models/solution';
-import ForumCTA from '../ForumCTA';
 import DesktopSidebar from './DesktopSidebar';
 import MobileAppBar from './MobileAppBar';
 import MobileSideNav from './MobileSideNav';
@@ -163,9 +162,9 @@ export default function MarkdownLayout({
               {children}
 
               <ModuleProgressUpdateBanner />
-
+              {/* 
               <ForumCTA />
-
+              */}
               {/*<div className="my-8">*/}
               {/*  <ModuleFeedback markdownData={markdownData} />*/}
               {/*</div>*/}

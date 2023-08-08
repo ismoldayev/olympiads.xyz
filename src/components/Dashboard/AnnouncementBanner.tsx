@@ -23,7 +23,7 @@ export default function AnnouncementBanner({ announcement, onDismiss }) {
                 </svg>
               </span>
               <p className="ml-3 font-medium text-white truncate">
-                New Announcement! {announcement.title}
+                Ново съобщение! {announcement.title}
               </p>
             </div>
             <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
@@ -32,7 +32,7 @@ export default function AnnouncementBanner({ announcement, onDismiss }) {
                   href="#announcements"
                   className="flex items-center justify-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-blue-600 bg-white hover:text-blue-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150"
                 >
-                  Learn more
+                  Виж повече
                 </a>
               </div>
             </div>
