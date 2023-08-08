@@ -140,7 +140,7 @@ export default function ResourcesListItem({
                   );
                 }}
               >
-                {copied ? 'Copied!' : 'Copy Permalink'}
+                {copied ? 'Копиран!' : 'Копирай линка'}
               </button>
             </div>
           </div>

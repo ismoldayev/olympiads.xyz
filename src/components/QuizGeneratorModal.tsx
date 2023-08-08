@@ -300,9 +300,9 @@ export default function QuizGeneratorModal(): JSX.Element {
                   <button
                     onClick={() => {
                       navigator.clipboard.writeText(getCode());
-                      setCopyText('Copied!');
+                      setCopyText('Копирано!');
                       setTimeout(() => {
-                        setCopyText('Copy');
+                        setCopyText('Копирай');
                       }, 3000);
                     }}
                     className="bg-gray-200 dark:text-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600  focus:ring-blue-500 focus:ring-2 rounded-md focus:outline-none absolute right-3 top-2 px-2 py-1"

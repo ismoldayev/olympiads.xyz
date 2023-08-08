@@ -108,7 +108,7 @@ export default function EditJoinLinkModal({
                   className="focus:outline-none"
                 >
                   <Tooltip
-                    content={copied ? 'Copied!' : 'Copy to Clipboard'}
+                    content={copied ? 'Копиран!' : 'Копирай линка'}
                     onHidden={() => setCopied(false)}
                     hideOnClick={false}
                   >

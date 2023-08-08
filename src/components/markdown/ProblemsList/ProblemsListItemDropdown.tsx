@@ -1,5 +1,4 @@
 import Tippy from '@tippyjs/react';
-import { navigate } from 'gatsby';
 import React from 'react';
 import { Instance } from 'tippy.js';
 import { useDarkMode } from '../../../context/DarkModeContext';
@@ -8,7 +7,6 @@ import { isUsaco, ProblemInfo } from '../../../models/problem';
 import TextTooltip from '../../Tooltip/TextTooltip';
 import ProblemListItemSolution from './ProblemListItemSolution';
 import { ProblemsListItemProps } from './ProblemsListItem';
-import { Link } from 'gatsby';
 
 function ViewSolutionsContent({
   problem,
@@ -18,7 +16,7 @@ function ViewSolutionsContent({
   const { solutions, currentUserSolutions } =
     useUserSolutionsForProblem(problem);
   let viewSolutionsContent = (
-    <>View User Solutions ({solutions?.length ?? '...'})</>
+    <>Решения на потребители ({solutions?.length ?? '...'})</>
   );
   if (currentUserSolutions?.length) {
     viewSolutionsContent = (
@@ -95,7 +93,7 @@ export default function ProblemsListItemDropdown(
                 );
               }}
             >
-              {copied ? 'Copied!' : 'Copy Permalink'}
+              {copied ? 'Копиран!' : 'Копирай линка'}
             </button>
             {isUsaco(problem.source) && (
               <a

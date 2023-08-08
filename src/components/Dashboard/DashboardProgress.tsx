@@ -67,7 +67,7 @@ export default function DashboardProgress({
 }: ProgressCounts): JSX.Element {
   return (
     <div>
-      <div className="grid grid-cols-4 gap-2 mb-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4">
         <FancyNumber
           number={completed}
           text="Завършени"
