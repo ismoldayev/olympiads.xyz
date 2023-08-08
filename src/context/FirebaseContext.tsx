@@ -10,16 +10,18 @@ import * as React from 'react';
 import { createContext } from 'react';
 
 export const FirebaseAppContext = createContext<FirebaseApp>(null);
-const firebaseConfig = {
-  apiKey: 'AIzaSyAvm-cvPgEFer3MVQtCiKegFTc1E9RHGG4',
-  authDomain: 'usaco-guide.firebaseapp.com',
-  databaseURL: 'https://usaco-guide.firebaseio.com',
-  projectId: 'usaco-guide',
-  storageBucket: 'usaco-guide.appspot.com',
-  messagingSenderId: '862152331454',
-  appId: '1:862152331454:web:8ba85fda47360ef9fe8eef',
-};
 
+const firebaseConfig = {
+  apiKey: 'AIzaSyC1W1cboNnqjEp7URXHj7myUogk-etz-f0',
+  authDomain: 'olympiads-xyz.firebaseapp.com',
+  databaseURL:
+    'https://olympiads-xyz-default-rtdb.europe-west1.firebasedatabase.app/',
+  projectId: 'olympiads-xyz',
+  storageBucket: 'olympiads-xyz.appspot.com',
+  messagingSenderId: '1077817845669',
+  appId: '1:1077817845669:web:443e3912b682908df12a4c',
+  measurementId: 'G-PK3S0MFEFQ',
+};
 export const FirebaseProvider = ({ children }) => {
   const [firebaseApp, setFirebaseApp] = React.useState<FirebaseApp>(null);
 

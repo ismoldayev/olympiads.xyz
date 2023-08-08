@@ -1,5 +1,5 @@
 import scheduledFirestoreExport from './backups';
-import * as cpiclasses from './cpiclasses';
+/*import * as cpiclasses from './cpiclasses';*/
 import getUsers from './getUsers';
 import * as groups from './groups';
 import incrementUsers from './incrementUsers';
@@ -13,7 +13,7 @@ export {
   scheduledFirestoreExport,
   getUsers,
   incrementUsers,
-  cpiclasses,
+  /* cpiclasses, */
   groups,
   submitContactForm,
 };
