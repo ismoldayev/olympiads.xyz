@@ -292,7 +292,7 @@ export const SECTIONS: SectionID[] = Object.keys(
 export const SECTION_LABELS: { [key in SectionID]: string } = {
   general: 'Общи',
   mechanics: 'Механика',
-  electromagnetism: 'Електромагнетизъм',
+  electromagnetism: 'Електричество и магнетизъм',
   thermodynamics: 'Термодинамика',
   plat: 'Модерна физика',
   adv: 'Астрономия',

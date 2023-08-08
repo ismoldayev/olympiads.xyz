@@ -78,14 +78,14 @@ export default function IndexPage(): JSX.Element {
 
             <div className="flex md:justify-center dark:hidden">
               <div className={classNames(usacoTitleClasses, 'text-black mt-4')}>
-                USACO Guide
+                Olympiads.xyz
               </div>
             </div>
             <div className="flex md:justify-center invisible h-0 dark:visible dark:h-auto">
               <GlowingText
                 className={classNames(usacoTitleClasses, 'text-white mt-4')}
               >
-                USACO Guide
+                Olympiads.xyz
               </GlowingText>
             </div>
 
@@ -104,10 +104,10 @@ export default function IndexPage(): JSX.Element {
                 dark:text-gray-300
               "
             >
-              A free collection of{' '}
-              <GradientText>curated, high-quality resources</GradientText>{' '}
+              Безплатна колекция от{' '}
+              <GradientText>подбрани, висококачествени ресурси</GradientText>{' '}
               <br className="hidden md:block" />
-              to take you from Mechanics to Modern and beyond.
+              за подготовка за олимпиади.
             </p>
 
             <div className="h-8 sm:h-12"></div>
@@ -118,7 +118,7 @@ export default function IndexPage(): JSX.Element {
                   to="/dashboard"
                   className={classNames(whiteButtonClassesBig, 'inline-block')}
                 >
-                  Get Started
+                  Да започваме!
                 </Link>
               </GlowingRing>
             </div>
