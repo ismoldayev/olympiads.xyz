@@ -95,6 +95,10 @@ export const probSources = {
     'The editorial should be available in the announcements tab.',
   ],
   YS: ['https://judge.yosupo.jp/problem/', 'Library Checker'],
+  НОФ3: [
+    'https://archive.olympiads.xyz/%D0%A4%D0%B8%D0%B7%D0%B8%D0%BA%D0%B0/%D0%A1%D1%8A%D1%81%D1%82%D0%B5%D0%B7%D0%B0%D0%BD%D0%B8%D1%8F/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%BD%D0%B0%20%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B0%D0%B4%D0%B0/III%20%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD%20%D0%BA%D1%80%D1%8A%D0%B3/III%20%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD%20%D0%BA%D1%80%D1%8A%D0%B3.html',
+    'Нациолен кръг на Националната олимпиада по физика',
+  ],
 };
 
 // olympiads on DMOJ and oj.uz
