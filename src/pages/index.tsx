@@ -44,31 +44,24 @@ export default function IndexPage(): JSX.Element {
       </div>
 
       {/* Begin Hero */}
-      <div className="-mt-16 bg-gray-100 dark:bg-black">
-        <div className="md:min-h-screen flex flex-col px-4 sm:px-6 lg:px-8">
-          <div className="h-6 sm:h-12"></div>
-
-          <div className="flex-1 flex flex-col justify-center">
-            <div className="h-24"></div>
-
-            <div className="flex md:justify-center dark:hidden">
-              <div className={classNames(usacoTitleClasses, 'text-black mt-4')}>
-                Olympiads.xyz
-              </div>
+      <div className="-mt-16 bg-gray-100 dark:bg-black h-screen flex justify-center items-center">
+        <div className="flex flex-col w-full max-w-xl px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-center dark:hidden">
+            <div className={classNames(usacoTitleClasses, 'text-black mt-4')}>
+              Olympiads.xyz
             </div>
-            <div className="flex md:justify-center invisible h-0 dark:visible dark:h-auto">
-              <GlowingText
-                className={classNames(usacoTitleClasses, 'text-white mt-4')}
-              >
-                Olympiads.xyz
-              </GlowingText>
-            </div>
+          </div>
+          <div className="flex justify-center invisible h-0 dark:visible dark:h-auto">
+            <GlowingText
+              className={classNames(usacoTitleClasses, 'text-white mt-4')}
+            >
+              Olympiads.xyz
+            </GlowingText>
+          </div>
 
-            <div className="h-6 sm:h-8"></div>
-
-            <p
-              className="
-                md:text-center
+          <p
+            className="
+                text-center
                 text-xl
                 sm:text-2xl
                 2xl:text-3xl
@@ -77,29 +70,24 @@ export default function IndexPage(): JSX.Element {
                 md:!leading-normal
                 text-gray-800
                 dark:text-gray-300
-              "
-            >
-              Безплатна колекция от{' '}
-              <GradientText>подбрани, висококачествени ресурси</GradientText>{' '}
-              <br className="hidden md:block" />
-              за подготовка за олимпиади.
-            </p>
+            "
+          >
+            Безплатна колекция от{' '}
+            <GradientText>подбрани, висококачествени ресурси</GradientText> за
+            подготовка за олимпиади.
+          </p>
 
-            <div className="h-8 sm:h-12"></div>
-
-            <div className="flex md:justify-center">
-              <GlowingRing>
-                <Link
-                  to="/dashboard"
-                  className={classNames(whiteButtonClassesBig, 'inline-block')}
-                >
-                  Да започваме!
-                </Link>
-              </GlowingRing>
-            </div>
+          <div className="flex justify-center mt-8">
+            <GlowingRing>
+              <Link
+                to="/dashboard"
+                className={classNames(whiteButtonClassesBig, 'inline-block')}
+              >
+                Да започваме!
+              </Link>
+            </GlowingRing>
           </div>
 
-          <div className="h-16 sm:h-24"></div>
           {/*
 
           <div className="flex md:justify-center md:text-xl text-gray-600 dark:text-gray-400">
