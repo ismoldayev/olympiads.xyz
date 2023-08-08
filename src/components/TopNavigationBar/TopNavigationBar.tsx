@@ -1,13 +1,10 @@
-import { Popover, Transition } from '@headlessui/react';
 import {
   AcademicCapIcon,
   ArchiveIcon,
   ChartBarIcon,
   ChatAlt2Icon,
   ChatAltIcon,
-  ChevronDownIcon,
   CogIcon,
-  ExternalLinkIcon,
   FireIcon,
   LightningBoltIcon,
   LoginIcon,
@@ -23,7 +20,7 @@ import {
 import classNames from 'classnames';
 import { Link } from 'gatsby';
 import * as React from 'react';
-import { Fragment, useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import MODULE_ORDERING from '../../../content/ordering';
 import { SignInContext } from '../../context/SignInContext';
 import UserDataContext from '../../context/UserDataContext/UserDataContext';
@@ -218,6 +215,7 @@ export default function TopNavigationBar({
                 >
                   Архив
                 </Link>
+                {/**
 
                 <Popover.Group as="nav" className="h-full">
                   <Popover className="h-full">
@@ -270,11 +268,12 @@ export default function TopNavigationBar({
                                       Групи
                                     </p>
                                     <p className="mt-1 text-sm text-gray-500 dark:text-dark-med-emphasis">
-                                      A Learning Management System fully
-                                      integrated with the USACO Guide.
+                                      Система за управление на обучение, напълно
+                                      интегрирана с Olympiads.xyz.
                                     </p>
                                   </div>
                                 </Link>
+                                {/*
                                 {resources.map(item => (
                                   <a
                                     key={item.name}
@@ -310,6 +309,7 @@ export default function TopNavigationBar({
                     )}
                   </Popover>
                 </Popover.Group>
+                */}
                 <button
                   className="cursor-pointer inline-flex items-center px-1 border-b-2 border-transparent text-base font-medium leading-6 text-gray-500 hover:text-gray-900 hover:border-gray-300 focus:outline-none focus:text-gray-900 focus:border-gray-300 dark:text-dark-high-emphasis dark:hover:border-gray-500 dark:focus:border-gray-500 transition"
                   onClick={() => setIsContactUsActive(true)}
@@ -452,6 +452,7 @@ export default function TopNavigationBar({
                 ))}
               </div>
             </div>
+            {/**
             <div className="py-5 px-4">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                 <Link
@@ -466,6 +467,7 @@ export default function TopNavigationBar({
                     Групи
                   </span>
                 </Link>
+                
                 {resources.map(item => (
                   <a
                     key={item.name}
@@ -483,13 +485,14 @@ export default function TopNavigationBar({
                     </span>
                   </a>
                 ))}
+                 
               </div>
             </div>
+            */}
             <div className="pt-5 px-4">
               <nav className="grid gap-y-8">
                 <Link
-                  key="Problems"
-                  to="/problems"
+                  to="https://archive.olympiads.xyz"
                   className="group -m-3 p-3 flex items-center rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
                   <ArchiveIcon
@@ -500,6 +503,7 @@ export default function TopNavigationBar({
                     Архив
                   </span>
                 </Link>
+
                 <a
                   className="group -m-3 p-3 cursor-pointer flex items-center rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
                   onClick={() => setIsContactUsActive(true)}
