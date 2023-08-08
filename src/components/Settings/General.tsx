@@ -49,7 +49,7 @@ export default function General(): JSX.Element {
                 className="text-sm font-medium text-gray-500 dark:text-gray-300"
                 id="privacy-option-1-label"
               >
-                Problem Lists and Search: Show Tags
+                Списъци и търсене на задачи: Показвай тагове
               </p>
             </div>
             <Switch checked={showTags} onChange={b => setShowTags(b)} />
@@ -60,7 +60,7 @@ export default function General(): JSX.Element {
                 className="text-sm font-medium text-gray-500 dark:text-gray-300"
                 id="privacy-option-1-label"
               >
-                Problem Lists and Search: Hide Difficulty
+                Списъци и търсене на задачи: Не показвай сложността
               </p>
             </div>
             <Switch
@@ -74,7 +74,7 @@ export default function General(): JSX.Element {
                 className="text-sm font-medium text-gray-500 dark:text-gray-300"
                 id="privacy-option-1-label"
               >
-                Problem Search: Hide Modules
+                Търсене на задачи: Не показвай модули
               </p>
             </div>
             <Switch checked={hideModules} onChange={b => setHideModules(b)} />
@@ -85,11 +85,12 @@ export default function General(): JSX.Element {
                 className="text-sm font-medium text-gray-500 dark:text-gray-300"
                 id="privacy-option-2-label"
               >
-                Dashboard: Показвай игнорирани задачи и модули
+                Главно табло: Показвай игнорирани задачи и модули
               </p>
             </div>
             <Switch checked={showIgnored} onChange={b => setShowIgnored(b)} />
           </li>
+          {/**
           <li className="py-4 flex items-center justify-between">
             <div className="flex flex-col">
               <p
@@ -108,6 +109,7 @@ export default function General(): JSX.Element {
               onChange={b => setIsLongPolling(b)}
             />
           </li>
+           */}
         </ul>
       </div>
     </div>

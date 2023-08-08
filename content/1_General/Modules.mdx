@@ -39,159 +39,59 @@ prerequisites:
 Ако можете да съберете над ⅔ от общия брой точки, имате добро разбиране на модула. Учениците, които се борят за златен медал на IPhO, трябва да опитат всичко.
 
 За всички задачи Ви съветваме да напишете собствено решение. След като приключите, проверете отговорите си и, ако решението Ви не е пълно, разберете какво сте пропуснали. Най-ефективно е да направите тази проверка незабавно, тъй като задачата ще е прясна в съзнанието Ви. Не е важно колко е красиво или подредено решението (със сигурност не се изисква да ги пишете на LaTeX; освен това писането на ръка симулира условията на олимпиада), но то трябва да е пълно, с точно определен краен отговор. В противен случай, ще е много по-лесно да мързелувате и да изгубите много важни задачи като надничате в решенията в твърде рано.
-There are six **sections** in the guide: Intro, Mechanics, Electromagnetism, Thermodynamics, Modern,
-and Advanced. Each section is subdivided into **categories**, which is just a
-group of modules. Each **module** (such as the one you're reading right now)
-represents one "article" or "page" on the site. A module generally consists of
-three parts:
 
-1. **Lesson**: Introduces the concept via a focus problem.
-2. **Implementations**: Solutions to the focus problem.
-3. **Practice Problems**: Teach you how to apply the concept to various
-   problems.
+## Компоненти
 
-Some relatively rare modules are prefixed with "optional." It's not essential to
-work through these if your goal is just to pass the corresponding division. They
-might be referenced in later divisions.
+Понякога модулите ще съдържат различни видове компоненти.
+Представяме някои от по-често срещаните:
 
-## Lesson
-
-The lesson is a curated collection of external resources, problems, and
-supplementary text we've written ourselves.
-
-- We'll link to online resources that already exist whenever possible.
-- The goal is to introduce you to the concept.
-- Everything is meant to be completed in order.
-- It usually begins with at least one **focus problem.**
-  - The focus problem is a direct application of the concept, and is useful in
-    testing your implementation.
-- We'll **star** external resources that we highly recommend you read. Feel free
-  to read the others if you don't understand something. If multiple modules
-  cover essentially the same material, at most one should be starred.
-
-## Implementations
-
-Usually the lesson is followed by an implementation of the solution to the focus
-problem.
-
-- C++ code will always be provided.
-- Java code will be provided (at least) for Mechanics to Thermodynamics.
-- Python code will be provided (at least) for Mechanics and some of Electromagnetism.
-
-Example input / output will be provided if not already contained within the
-statement of the focus problem.
-
-## Practice Problems
-
-After reading the module lesson, you'll be given a lot of problems (from various
-sources, not just USACO) to practice applying the concept you've learned.
-
-- The problems are roughly sorted in order of how they are recommended to be
-  completed.
-- You don't have to solve every problem, just enough to feel comfortable with
-  the module. We've starred the ones we found most interesting.
-
-Please let us know if the problem is not a good example of the corresponding
-topic!
-
-### Problem Editorials
-
-We'll try our best to write full editorials for problems which don't have them
-(or if existing editorials are poorly written). _Starred problems will generally
-have better editorials._ If you believe an editorial is needed for a problem,
-please let us know using the "Contact Us" button.
-
-<Warning>
-
-A lot of current sketches are not actually useful.
-
-</Warning>
-
-### Problem Difficulty (Mechanics to Thermodynamics)
-
-Difficulty represents how challenging a problem is expected to be to someone
-after they read through the module, **not** how difficult the problem is in
-general. Therefore, it is **not** comparable across modules (even of the same
-division).
-
-Difficulty ranges from **Very Easy** to **Insane**.
-
-- **Very Easy** problems are related to the module, but you should be able to do
-  them relatively quickly before reading the resources.
-- **Easy** problems can be solved relatively quickly by someone who is familiar
-  with the module, and they should be approachable by someone who has just
-  finished reading the starred resources.
-- **Normal** problems require a bit more thinking.
-- **Hard** problems may require a lot (?) of time to approach.
-- **Very Hard** problems challenge even the strongest contestants in the
-  corresponding division. Often require multiple levels of observation and more
-  knowledge than provided by the module.
-- **Insane** problems shouldn't appear on a (reasonable) contest of the
-  corresponding division. Don't worry about solving these until you've reached a
-  higher division.
-
-### Conventions for Sources and Tags
-
- - Follow the format of existing sources and tags from the [problems page](/problems/).
- - Split separate tags into separate strings (e.g., `['Meet in the Middle', 'DP']` rather than `['Meet in the Middle, DP']`).
- - Some sources are automatically assigned [tooltips](https://github.com/cpinitiative/usaco-guide/blob/master/src/models/problem.ts) that display when hovered over. For a source not automatically assigned a tooltip, you can give it one by specifying `sourceDescription`.
-
-## Custom Components
-
-Sometimes modules will contain custom components. Here are some of the more
-common ones.
-
-<Info title="Pro Tip">
-
-Helpful bits of advice provided by the author.
+<Info title="Идея">
+Полезни съвети, предоставени от автора.
 
 <!-- Tips on how to become legend in CP and better at competitve programming by Benjamin Qi, exactly what you wanted when you spam DM'd him! Definitely take these tips seriously. Don't uncomment this. -->
 
 </Info>
 
-<Spoiler title="Hidden Content">
+<Spoiler title="Скрито съдържание">
 
-In some modules, codes or solutions will be placed in **spoiler blocks** like
-this. In these cases, you should think about the problem or try to implement it
-yourself before revealing the solution or code.
+В някои модули решенията ще бъдат поставени в **спойлер блокове** като този.
+В тези случаи трябва да помислите върху задачата и да се опитате да я решите сами, преди да разкриете решението.
 
 </Spoiler>
 
-<Optional title="Optional Content">
+<Optional title="Съдържание по избор">
 
-Not all content in this guide is essential to competitive programming. Skipping
-over optional content is fine, but if you're interested, feel free to explore
-further as well.
+Не цялото информация в този сайт е от съществено значение за състезателната физика.
+Пропускането на незадължително съдържание е добре, но ако се интересувате, не се колебайте да проучите и по-нататък.
 
 </Optional>
 
 <Warning>
 
-Pay attention to content within warning blocks!
+Обърнете внимание на съдържанието в предупредителните блокове!
 
 </Warning>
 
-See [Working With MDX](/general/working-mdx) for more information regarding
-custom components.
+Вижте [Работа с MDX](/general/working-mdx) за повече информация относно частните компоненти.
 
-## Statuses
+## Статуси
 
-Problem Statuses:
+Статуси на Задачи:
 
- - Not Attempted - Self-explanatory.
- - Solving - Self-explanatory. Will show up under dashboard active problems.
- - Solved - Self-explanatory.
- - Reviewing - Use for problems that you have solved and want to show up under dashboard active problems.
- - Skipped - Use for problems that you have skipped and intend to come back to. Will show up under dashboard active problems.
- - Ignored - Use for problems that you have skipped and do not intend to come back to. Will show up under dashboard active problems if enabled in settings.
+ - Незапочната - Разбира се от само себе си.
+ - Решавам - Разбира се от само себе си. Ще се покаже в графата "Активни" в главното табло.
+ - Решена - Разбира се от само себе си.
+ - Преглеждам - Използвайте за задачи, които сте решили и искате да се показват в графата "Активни" в главното таблото.
+ - Прескочена - Използвайте за задачи, които сте пропуснали и към които възнамерявате да се върнете. Ще се покаже в графата "Активни" в главното табло.
+ - Игнорирана - Използвайте за задачи, които сте пропуснали и към които **НЕ** възнамерявате да се върнете. Ще се покаже в графата "Активни" в главното табло, само ако е активирано в настройките.
 
-Module (and Resource) Statuses:
+Статуси на Модули (и Ресурси):
 
- - Not Started - Self-explanatory.
- - Reading - Self-explanatory. Will show up under dashboard active modules.
- - Practicing - Self-explanatory. Will show up under dashboard active modules.
- - Complete - Self-explanatory.
- - Skipped - Use for modules that you have skipped and intend to come back to. Will show up under dashboard active modules.
- - Ignored - Use for modules that you have skipped and do not intend to come back to. Will show up under dashboard active modules if enabled in settings.
+ - Незапочнат - Разбира се от само себе си.
+ - Чета - Разбира се от само себе си. Ще се покаже в графата "Активни" в главното табло.
+ - Упражнявам - Разбира се от само себе си. Ще се покаже в графата "Активни" в главното табло.
+ - Завършен - Разбира се от само себе си.
+ - Прескочен - Използвайте за модули, които сте пропуснали и към които възнамерявате да се върнете. Ще се покаже в графата "Активни" в главното табло.
+ - Игнориран - Използвайте за модули, които сте пропуснали и към които **НЕ** възнамерявате да се върнете. Ще се покаже в графата "Активни" в главното табло, само ако е активирано в настройките.
 
 <Problems problems="problems" />

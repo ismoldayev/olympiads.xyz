@@ -10,7 +10,7 @@ export const IncompleteSection = ({
     <Danger title="This section is not complete.">
       Any help would be appreciated! Just submit a Pull Request on{' '}
       <a
-        href="https://github.com/cpinitiative/usaco-guide"
+        href="https://github.com/ismoldayev/olympiads.xyz"
         target="_blank"
         rel="noreferrer"
       >

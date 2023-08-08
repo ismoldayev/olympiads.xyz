@@ -41,7 +41,7 @@ const sectionFromLang = sections => {
         {/* Please choose a different default language for now.  */}
         Submitting a Pull Request on{' '}
         <a
-          href="https://github.com/cpinitiative/usaco-guide"
+          href="https://github.com/ismoldayev/olympiads.xyz"
           target="_blank"
           rel="noreferrer"
         >

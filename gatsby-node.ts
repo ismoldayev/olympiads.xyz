@@ -7,14 +7,14 @@ import {
   checkInvalidUsacoMetadata,
   getProblemInfo,
   getProblemURL,
-  ShortProblemInfo,
   ProblemMetadata,
+  ShortProblemInfo,
 } from './src/models/problem';
 
 // Questionable hack to get full commit history so that timestamps work
 try {
   execSync(
-    `git fetch --unshallow https://github.com/cpinitiative/usaco-guide.git`
+    `git fetch --unshallow https://github.com/ismoldayev/olympiads.xyz.git`
   );
 } catch (e) {
   console.warn(

@@ -78,12 +78,12 @@ export default function ContactUsSlideover({
   const [location, setLocation] = useState(defaultLocation);
   const [topic, setTopic] = useStickyState('', 'contact_form_topic');
   const topics = [
-    ['Minor Mistake', 'typo, broken link, wrong time complexity'],
-    ['Unclear Explanation'],
-    ['Website Bug'],
-    ['Suggestion'],
-    ['Request - Missing Section or Solution'],
-    ['Other'],
+    ['Дребна грешка', 'печатна грешка, счупен линк'],
+    ['Неясно обяснение'],
+    ['Бъг в уебсайта'],
+    ['Предложение'],
+    ['Заявка - липсващ раздел или решение'],
+    ['Друго'],
   ];
   const [message, setMessage] = useStickyState('', 'contact_form_message');
   const [showSuccess, setShowSuccess] = useState(false);
@@ -167,15 +167,16 @@ export default function ContactUsSlideover({
       title="Връзка с нас"
       subtitle={
         <>
-          Contact us about anything: suggestions, bugs, assistance, and more!
-          This will be submitted as a public{' '}
+          Можете да се свържете се с нас за всичко: предложения, грешки,
+          съдействие и много повече! Съобщението Ви ще бъде изпратено като
+          публичен{' '}
           <a
-            href="https://github.com/cpinitiative/usaco-guide/issues"
+            href="https://github.com/ismoldayev/olympiads.xyz/issues"
             target="_blank"
             rel="noreferrer"
             className="underline"
           >
-            Github issue
+            Github проблем
           </a>
           .
         </>
@@ -184,7 +185,7 @@ export default function ContactUsSlideover({
         <>
           <span className="inline-flex rounded-md shadow-sm">
             <button type="button" className="btn" onClick={onClose}>
-              Cancel
+              Откажи
             </button>
           </span>
           <span className="inline-flex rounded-md shadow-sm">
@@ -243,12 +244,12 @@ export default function ContactUsSlideover({
               </div>
               <div className="ml-3">
                 <h3 className="text-sm leading-5 font-medium text-green-800 dark:text-dark-high-emphasis">
-                  Message received!
+                  Съобщението е получено!
                 </h3>
                 <div className="mt-2 text-sm leading-5 text-green-700 dark:text-dark-high-emphasis">
                   <p>
-                    Your message has been submitted as an issue in our GitHub
-                    repository. You can track the issue here:{' '}
+                    Вашето съобщение е изпратено като проблем в нашето
+                    repository в GitHub. Можете да проследите проблема тук:{' '}
                     <a
                       href={issueLink}
                       target="_blank"
@@ -276,91 +277,40 @@ export default function ContactUsSlideover({
         {!showSuccess && (
           <div className="space-y-6 pb-5">
             <Field
-              label="Name (will not be shown publicly)"
+              label="Име (няма да бъде показано публично)"
               id="contact_name"
               value={name}
               onChange={e => setName(e.target.value)}
               errorMsg={
-                showErrors && name === '' ? 'This field is required.' : null
+                showErrors && name === '' ? 'Това поле е задължително.' : null
               }
             />
             <Field
-              label="Email (will not be shown publicly)"
+              label="Email (няма да бъде показан публично)"
               id="contact_email"
               value={email}
               onChange={e => setEmail(e.target.value)}
               errorMsg={
                 showErrors
                   ? email === ''
-                    ? 'This field is required.'
+                    ? 'Това поле е задължително.'
                     : !validateEmail(email)
-                    ? 'Please enter a valid email address.'
+                    ? 'Моля въведете валиден email.'
                     : null
                   : null
               }
             />
             <Field
-              label="Module (if applicable)"
+              label="Модул (ако е приложимо)"
               id="contact_module"
               value={location}
               onChange={e => setLocation(e.target.value)}
             />
             <fieldset className="space-y-2">
               <legend className="text-sm leading-5 font-medium text-gray-900 dark:text-dark-high-emphasis">
-                Topic
+                Тема
               </legend>
-              <div className="text-sm">
-                The USACO Guide is not affiliated with the USACO. If you
-                encounter any issues with{' '}
-                <a
-                  className="hover:underline text-blue-600 dark:text-blue-300"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="http://usaco.org"
-                >
-                  usaco.org
-                </a>{' '}
-                (e.g., trouble{' '}
-                <a
-                  className="hover:underline text-blue-600 dark:text-blue-300"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/cpinitiative/usaco-guide/issues/2854"
-                >
-                  registering for an account
-                </a>
-                ), contact the USACO contest director (
-                <a
-                  className="hover:underline text-blue-600 dark:text-blue-300"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="mailto:bcdean@clemson.edu"
-                >
-                  Brian Dean
-                </a>
-                ) rather than submitting this form.
-              </div>
-              <div className="text-sm">
-                If you have any questions about{' '}
-                <a
-                  className="hover:underline text-blue-600 dark:text-blue-300"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://joincpi.org/classes"
-                >
-                  CPI classes
-                </a>
-                , please email{' '}
-                <a
-                  className="hover:underline text-blue-600 dark:text-blue-300"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="mailto:classes@joincpi.org"
-                >
-                  classes@joincpi.org
-                </a>{' '}
-                rather than submitting this form.
-              </div>
+
               <div className="space-y-3">
                 {topics.map((t, idx) => (
                   <div key={idx}>
@@ -380,8 +330,9 @@ export default function ContactUsSlideover({
                           htmlFor={`contact_topic_${idx}`}
                           className="font-medium text-gray-900 dark:text-dark-high-emphasis"
                         >
-                          {t[0]} {t.length > 1 ? `(e.g., ${t[1]})` : ''}
+                          {t[0]} {t.length > 1 ? `(напр., ${t[1]})` : ''}
                         </label>
+                        {/*
                         {topic === t[0] && t[0].includes('Mistake') && (
                           <div>
                             Submitting a pull request{' '}
@@ -405,6 +356,7 @@ export default function ContactUsSlideover({
                             for how to contribute.
                           </div>
                         )}
+                        
                         {topic === t[0] && t[0].startsWith('Unclear') && (
                           <div>
                             You may get a faster response by reaching out on the{' '}
@@ -433,13 +385,14 @@ export default function ContactUsSlideover({
                             </a>
                           </div>
                         )}
+                        */}
                       </div>
                     </div>
                   </div>
                 ))}
                 {showErrors && topic === '' && (
                   <p className="mt-2 text-sm text-red-600 dark:text-red-400">
-                    This field is required.
+                    Това поле е задължително.
                   </p>
                 )}
               </div>
@@ -449,7 +402,7 @@ export default function ContactUsSlideover({
                 htmlFor="contact_message"
                 className="block text-sm font-medium leading-5 text-gray-900 dark:text-dark-high-emphasis"
               >
-                Message (markdown is supported)
+                Съобщение (поддържа се markdown)
               </label>
               <div className="relative rounded-md shadow-sm">
                 <textarea
@@ -482,7 +435,7 @@ export default function ContactUsSlideover({
               </div>
               {showErrors && message.length < 10 && (
                 <p className="mt-2 text-sm text-red-600 dark:text-red-400">
-                  Message must be at least 10 chars.
+                  Съобщението трябва да е поне 10 символа.
                 </p>
               )}
             </div>
