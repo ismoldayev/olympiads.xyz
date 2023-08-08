@@ -95,39 +95,11 @@ const SECTION_DESCRIPTION: { [key in SectionID]: React.ReactNode } = {
       прегледате отново по-късно!
     </>
   ),
-  mechanics: (
-    <>
-      {topicsWarning}
-      <br />
-      If you prefer videos instead of text, check out CPI's free{' '}
-      <a
-        href="https://joincpi.org/video-classes"
-        target="_blank"
-        rel="noreferrer"
-        className="underline"
-      >
-        self-study Mechanics course.
-      </a>
-    </>
-  ),
-  electromagnetism: topicsWarning,
-  thermodynamics: topicsWarning,
-  plat: (
-    <>
-      {topicsWarning}
-      <br />
-      Some lower-frequency topics are included in "Advanced."
-    </>
-  ),
-  adv: (
-    <>
-      Some of these topics have not appeared in Modern and probably never will
-      (ex. Matroid Intersection).
-      <br />
-      Others have appeared in Old Thermodynamics or Modern very infrequently
-      (ex. BCC, Suffix Array).
-    </>
-  ),
+  mechanics: <>МА</>,
+  electromagnetism: <>ВИ</>,
+  thermodynamics: <>ДМ</>,
+  plat: <>ДМ</>,
+  adv: <>ЕБ</>,
 };
 
 export default function Template(props) {

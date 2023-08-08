@@ -9,7 +9,6 @@ import ActiveItems, { ActiveItem } from '../components/Dashboard/ActiveItems';
 import Activity from '../components/Dashboard/Activity';
 import AnnouncementBanner from '../components/Dashboard/AnnouncementBanner';
 import Announcements from '../components/Dashboard/Announcements';
-import DailyStreak from '../components/Dashboard/DailyStreak';
 import Card from '../components/Dashboard/DashboardCard';
 import DashboardProgress from '../components/Dashboard/DashboardProgress';
 import WelcomeBackBanner from '../components/Dashboard/WelcomeBackBanner';
@@ -291,7 +290,9 @@ export default function DashboardPage(props: PageProps) {
                 {/*  </div>*/}
                 {/*</div>*/}
               </div>
+              {/*
               <DailyStreak streak={consecutiveVisits} />
+            */}
             </div>
           </div>
         </main>

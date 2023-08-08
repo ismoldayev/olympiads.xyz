@@ -38,7 +38,7 @@ export default function General(): JSX.Element {
     <div>
       <div className="space-y-1">
         <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
-          Options
+          Опции
         </h3>
       </div>
       <div>
@@ -85,7 +85,7 @@ export default function General(): JSX.Element {
                 className="text-sm font-medium text-gray-500 dark:text-gray-300"
                 id="privacy-option-2-label"
               >
-                Dashboard: Show Игнориран Problems & Modules
+                Dashboard: Показвай игнорирани задачи и модули
               </p>
             </div>
             <Switch checked={showIgnored} onChange={b => setShowIgnored(b)} />

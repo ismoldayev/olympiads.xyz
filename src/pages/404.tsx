@@ -11,11 +11,11 @@ export default function NotFoundPage() {
       <TopNavigationBar />
 
       <h1 className="text-center mt-16 text-4xl sm:text-5xl font-black">
-        404 Not Found
+        404 Не е намерен
       </h1>
       <p className="text-center mt-4">
         <Link to="/" className="text-xl text-blue-600">
-          Return Home
+          Обратно към начало
         </Link>
       </p>
     </Layout>

@@ -1,35 +1,10 @@
-import {
-  AcademicCapIcon,
-  ChartBarIcon,
-  ChatAlt2Icon,
-  ClipboardListIcon,
-  CogIcon,
-  DatabaseIcon,
-  LightningBoltIcon,
-  TerminalIcon,
-  UserGroupIcon,
-} from '@heroicons/react/outline';
 import classNames from 'classnames';
 import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
 import { useRef } from 'react';
 import { GlowingRing } from '../components/elements/landing/GlowingRing';
 import { GlowingText } from '../components/elements/landing/GlowingText';
 import { GradientText } from '../components/elements/landing/GradientText';
-import { HighlightedText } from '../components/elements/landing/HighlightedText';
-import ContributorsSection from '../components/Index/ContributorsSection';
-import { CPIProjectCard } from '../components/Index/CPIProjectCard';
-import { Feature } from '../components/Index/Feature';
-import { ProblemsetsFeature } from '../components/Index/features/ProblemsetsFeature';
-import { ProgressTrackingFeature } from '../components/Index/features/ProgressTrackingFeature';
-import { ResourcesFeature } from '../components/Index/features/ResourcesFeature';
-import {
-  EasyFunCoding,
-  Vercel,
-  XCamp,
-} from '../components/Index/sponsor-logos';
-import TrustedBy from '../components/Index/TrustedBy';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import TopNavigationBar from '../components/TopNavigationBar/TopNavigationBar';
@@ -125,6 +100,7 @@ export default function IndexPage(): JSX.Element {
           </div>
 
           <div className="h-16 sm:h-24"></div>
+          {/*
 
           <div className="flex md:justify-center md:text-xl text-gray-600 dark:text-gray-400">
             <a
@@ -183,12 +159,13 @@ export default function IndexPage(): JSX.Element {
               <span>Created by the CP Initiative</span>
             </a>
           </div>
+           */}
           <div className="h-4 sm:h-6 md:h-16"></div>
         </div>
       </div>
       {/* End Hero */}
 
-      {/* Learn USACO. Efficiently. */}
+      {/* Learn USACO. Efficiently.
       <div className="bg-white dark:bg-gray-900">
         <div className="h-12 sm:h-20 md:h-36 2xl:h-48"></div>
 
@@ -297,7 +274,7 @@ export default function IndexPage(): JSX.Element {
         </div>
         <div className="h-16 md:h-20 2xl:h-36"></div>
       </div>
-      {/* End Learn USACO. Efficiently. */}
+      {/* End Learn USACO. Efficiently. 
 
       <div className="bg-gray-100 dark:bg-black">
         <div className="h-16 md:h-20 2xl:h-36"></div>
@@ -530,7 +507,7 @@ export default function IndexPage(): JSX.Element {
           <p className="uppercase text-gray-700 dark:text-gray-400 font-medium text-lg md:text-xl">
             Our Sponsors
           </p>
-          {/* Sponsor logos don't fit well in the light theme */}
+          {/* Sponsor logos don't fit well in the light theme
           <p className="uppercase text-gray-600 dark:text-gray-400 font-semibold pt-6 md:text-lg">
             Modern Sponsors
           </p>
@@ -574,7 +551,7 @@ export default function IndexPage(): JSX.Element {
         <div className="h-16 md:h-20 xl:h-36 2xl:h-48"></div>
       </div>
 
-      {/* Begin FAQ */}
+      {/* Begin FAQ 
       <div className="bg-white dark:bg-dark-surface">
         <div className="max-w-screen-xl mx-auto pt-12 pb-16 sm:pt-16 sm:pb-20 px-4 sm:px-6 lg:pt-20 lg:pb-28 lg:px-8">
           <h2 className={classNames(headerClasses, 'dark:text-gray-100')}>
@@ -734,7 +711,7 @@ export default function IndexPage(): JSX.Element {
           </div>
         </div>
       </div>
-      {/*End FAQ*/}
+      {/*End FAQ
 
       <ContributorsSection />
 
@@ -761,6 +738,7 @@ export default function IndexPage(): JSX.Element {
           </p>
         </div>
       </div>
+                      */}
     </Layout>
   );
 }

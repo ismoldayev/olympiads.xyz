@@ -27,7 +27,7 @@ export default function Profile(): JSX.Element {
     <div>
       <div className="space-y-1">
         <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
-          Profile
+          Профил
         </h3>
       </div>
       <div className="h-4" />
@@ -38,7 +38,7 @@ export default function Profile(): JSX.Element {
               htmlFor="display_name"
               className="block text-sm font-medium text-gray-700 dark:text-gray-200"
             >
-              Display Name
+              Потребителско име
             </label>
             <div className="mt-1">
               <input
@@ -54,12 +54,12 @@ export default function Profile(): JSX.Element {
 
           <div className="flex">
             <button type="submit" className="btn-primary">
-              Save
+              Запази
             </button>
           </div>
         </form>
       ) : (
-        <p>You need to be logged in to update your profile.</p>
+        <p>Трябва да сте влезли в профила си, за да го редактирате.</p>
       )}
     </div>
   );

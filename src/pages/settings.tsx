@@ -7,7 +7,6 @@ import AdminSettings from '../components/Settings/AdminSettings';
 import Authentication from '../components/Settings/Authentication';
 import DarkMode from '../components/Settings/DarkMode';
 import General from '../components/Settings/General';
-import Language from '../components/Settings/Language';
 import Profile from '../components/Settings/Profile';
 import UserData from '../components/Settings/UserData';
 import TopNavigationBar from '../components/TopNavigationBar/TopNavigationBar';
@@ -105,7 +104,7 @@ export default function SettingsPage() {
                     general: 'Общи',
                     profile: 'Профил',
                     auth: 'Методи за влизане',
-                    'user-data': 'User Data',
+                    'user-data': 'Потребителски данни',
                     admin: 'Admin Settings',
                   }}
                   value={tab}
@@ -117,7 +116,7 @@ export default function SettingsPage() {
                 <div className="space-y-10">
                   {tab === 'general' && (
                     <>
-                      <Language />
+                      {/*<Language />*/}
                       <DarkMode />
                       <General />
                     </>

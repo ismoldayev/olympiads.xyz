@@ -9,7 +9,7 @@ export default function DarkMode() {
     <div>
       <div className="space-y-1">
         <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
-          Theme
+          Тема
         </h3>
       </div>
       <div className="h-4" />
@@ -20,7 +20,11 @@ export default function DarkMode() {
         onChange={newValue => {
           setTheme(newValue);
         }}
-        labelMap={{ light: 'Light Mode', dark: 'Dark Mode', system: 'System' }}
+        labelMap={{
+          light: 'Светла тема',
+          dark: 'Тъмна тема',
+          system: 'Системна',
+        }}
         descriptionMap={{}}
       />
     </div>

@@ -200,6 +200,7 @@ export default function TopNavigationBar({
               </Link>
               <div className={`hidden lg:ml-8 lg:flex space-x-8`}>
                 <SectionsDropdown currentSection={currentSection} />
+                {/*
                 <Link
                   to="/problems/"
                   getProps={({ isCurrent }) => ({
@@ -210,6 +211,14 @@ export default function TopNavigationBar({
                 >
                   Архив
                 </Link>
+                */}
+                <Link
+                  to="https://archive.olympiads.xyz"
+                  className="inline-flex items-center px-1 pt-0.5 border-b-2 border-transparent text-base font-medium leading-6 focus:outline-none transition hover:border-gray-300 dark:hover:border-gray-500 dark:focus:border-gray-500"
+                >
+                  Архив
+                </Link>
+
                 <Popover.Group as="nav" className="h-full">
                   <Popover className="h-full">
                     {({ open }) => (
