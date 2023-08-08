@@ -40,8 +40,9 @@ const StyledProblemRow = styled.tr`
 `;
 
 export const difficultyClasses = {
-  'Very Easy': 'bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100',
-  Easy: 'bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100',
+  'Много лесна':
+    'bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100',
+  Лесна: 'bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100',
   Normal: 'bg-blue-100 text-blue-800 dark:bg-blue-800 dark:text-blue-100',
   Hard: 'bg-purple-100 text-purple-800 dark:bg-purple-800 dark:text-purple-100',
   'Very Hard':
@@ -180,7 +181,7 @@ export default function ProblemsListItem(
             open={props.showTags}
             className="text-gray-500 dark:text-dark-med-emphasis"
           >
-            <summary>Show Tags</summary>
+            <summary>Покажи тагове</summary>
             <span className="text-xs">{problem.tags.sort().join(', ')}</span>
           </details>
         ) : null}

@@ -23,7 +23,7 @@ const problemLists: {
         name: 'Maximum Distance',
         url: 'https://codeforces.com/gym/102951/problem/A',
         source: 'CF',
-        difficulty: 'Easy',
+        difficulty: 'Лесна',
         isStarred: false,
         tags: [],
         solution: {
@@ -40,7 +40,7 @@ const problemLists: {
         name: 'Maximum Distance',
         url: 'https://codeforces.com/gym/102951/problem/A',
         source: 'CF',
-        difficulty: 'Easy',
+        difficulty: 'Лесна',
         isStarred: false,
         tags: [],
         solution: {

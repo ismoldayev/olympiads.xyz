@@ -2,7 +2,7 @@ import { FirebaseApp } from 'firebase/app';
 import { DocumentReference, setDoc } from 'firebase/firestore';
 
 /**
- * This class makes it easy to add new properties to UserDataContext.
+ * This class makes it лесна to add new properties to UserDataContext.
  *
  * To use this class, first set the following properties:
  * - `storageKey`

@@ -89,12 +89,12 @@ export const ProblemsetsFeature = (): JSX.Element => {
                     <TableRow
                       source="CSES"
                       title="Road Construction"
-                      difficulty="Easy"
+                      difficulty="Лесна"
                     />
                     <TableRow
                       source="USACO Thermodynamics"
                       title="Closing the Farm"
-                      difficulty="Easy"
+                      difficulty="Лесна"
                       className="bg-gray-50 dark:bg-gray-900"
                     />
                     <TableRow

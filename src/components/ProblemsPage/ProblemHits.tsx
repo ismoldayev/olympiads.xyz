@@ -58,7 +58,7 @@ function ProblemHit({ hit }: ProblemHitProps) {
           rel="noreferrer"
           className="text-gray-500 dark:text-dark-med-emphasis text-sm"
         >
-          View Problem Statement
+          Виж условието на задачата
           <svg
             viewBox="0 0 20 20"
             fill="currentColor"

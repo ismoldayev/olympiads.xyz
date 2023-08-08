@@ -248,7 +248,7 @@ export default function ModuleHeaders({
               rel="noreferrer"
               className="text-sm font-medium text-gray-800 hover:text-gray-900 my-0 dark:text-gray-200 dark:hover:text-gray-100 group inline-flex items-center space-x-1.5"
             >
-              <span>View Problem Statement</span>
+              <span>Виж условието на задачата</span>
               <ExternalLinkIcon className="h-5 w-5 text-gray-400 group-hover:text-gray-600 dark:text-gray-400 dark:group-hover:text-gray-300" />
             </a>
           </div>

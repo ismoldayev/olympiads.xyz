@@ -13,7 +13,7 @@ const mockHits = [
     source: 'YS',
     tags: [],
     url: 'https://judge.yosupo.jp/problem/zalgorithm',
-    difficulty: 'Easy',
+    difficulty: 'Лесна',
     isStarred: false,
     solution: null,
     problemModules: [
@@ -37,7 +37,7 @@ const mockHits = [
         matchLevel: 'none',
       },
       difficulty: {
-        value: 'Easy',
+        value: 'Лесна',
         matchLevel: 'none',
       },
       problemModules: [

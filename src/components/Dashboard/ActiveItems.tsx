@@ -21,7 +21,7 @@ const statusClasses: { [key in ActiveItemStatus]: string } = {
   Прескочен: difficultyClasses.Normal,
   Игнориран: 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100',
   Чета: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-800 dark:text-yellow-100',
-  Упражнявам: difficultyClasses.Easy,
+  Упражнявам: difficultyClasses.Лесна,
   Решавам:
     'bg-yellow-100 text-yellow-800 dark:bg-yellow-800 dark:text-yellow-100',
   Преглеждам: difficultyClasses.Insane,

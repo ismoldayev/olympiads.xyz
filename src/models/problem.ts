@@ -543,15 +543,15 @@ export const PROBLEM_PROGRESS_OPTIONS: ProblemProgress[] = [
 ];
 
 export type ProblemDifficulty =
-  | 'Very Easy'
-  | 'Easy'
+  | 'Много лесна'
+  | 'Лесна'
   | 'Normal'
   | 'Hard'
   | 'Very Hard'
   | 'Insane';
 export const PROBLEM_DIFFICULTY_OPTIONS: ProblemDifficulty[] = [
-  'Very Easy',
-  'Easy',
+  'Много лесна',
+  'Лесна',
   'Normal',
   'Hard',
   'Very Hard',
