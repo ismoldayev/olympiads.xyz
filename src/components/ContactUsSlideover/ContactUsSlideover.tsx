@@ -248,8 +248,8 @@ export default function ContactUsSlideover({
                 </h3>
                 <div className="mt-2 text-sm leading-5 text-green-700 dark:text-dark-high-emphasis">
                   <p>
-                    Вашето съобщение е изпратено като проблем в нашето
-                    repository в GitHub. Можете да проследите проблема тук:{' '}
+                    Вашето съобщение е изпратено като проблем в нашето Хранилище
+                    в GitHub. Можете да проследите проблема тук:{' '}
                     <a
                       href={issueLink}
                       target="_blank"
