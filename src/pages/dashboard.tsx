@@ -122,8 +122,8 @@ export default function DashboardPage(props: PageProps) {
         x =>
           (userProgressOnProblems[x] === 'Преглеждам' ||
             userProgressOnProblems[x] === 'Решавам' ||
-            userProgressOnProblems[x] === 'Прескочен' ||
-            (showIgnored && userProgressOnProblems[x] === 'Игнориран')) &&
+            userProgressOnProblems[x] === 'Прескочена' ||
+            (showIgnored && userProgressOnProblems[x] === 'Игнорирана')) &&
           problemIDMap.hasOwnProperty(x)
       )
       .map(x => ({

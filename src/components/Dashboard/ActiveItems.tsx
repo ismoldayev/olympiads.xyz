@@ -77,7 +77,7 @@ export default function ActiveItems({
     <DashboardCard>
       <div className="px-4 py-5 sm:p-6">
         <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-dark-high-emphasis">
-          Active {type === 'problems' ? 'Problems' : 'Modules'}
+          Активни {type === 'problems' ? 'задачи' : 'модули'}
         </h3>
         <div className="mt-4 text-gray-500">
           {items.map((item, idx) => (
