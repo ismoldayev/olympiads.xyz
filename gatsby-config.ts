@@ -82,8 +82,8 @@ const plugins = [
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: `USACO Guide`,
-      short_name: `USACO`,
+      name: `Olympiads.xyz`,
+      short_name: `Olympiads.xyz`,
       start_url: `/`,
       background_color: `#113399`,
       theme_color: `#113399`,
@@ -94,7 +94,7 @@ const plugins = [
   {
     resolve: `gatsby-plugin-google-gtag`,
     options: {
-      trackingIds: ['G-1JGYFFBHXN'],
+      trackingIds: ['G-PK3S0MFEFQ'],
       pluginConfig: {
         head: false,
       },
