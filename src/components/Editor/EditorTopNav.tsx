@@ -38,7 +38,7 @@ export const EditorTopNav = (): JSX.Element => {
             <LogoSquare />
           </div>
           <span className="font-medium text-xl tracking-tight">
-            Guide Editor
+            Olympiads Editor
           </span>
         </div>
         {/*<button className="inline-flex items-center space-x-2 text-gray-600 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-3 py-2 font-medium text-sm rounded-md focus:outline-none transition">*/}
@@ -83,7 +83,7 @@ export const EditorTopNav = (): JSX.Element => {
             className="inline-flex items-center space-x-2 text-gray-600 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-3 py-2 font-medium text-sm rounded-md focus:outline-none transition"
             onClick={handleReloadContent}
           >
-            Reload Content from Github
+            Презареди съдържанието от Github
           </button>
         )}
         {activeFile?.path && (
@@ -95,11 +95,12 @@ export const EditorTopNav = (): JSX.Element => {
             className="inline-flex items-center space-x-2 text-gray-600 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-3 py-2 font-medium text-sm rounded-md focus:outline-none transition"
             rel="noreferrer"
           >
-            View File on Github &rarr;
+            Виж файла в Github &rarr;
           </a>
         )}
       </div>
       <div className="flex items-center">
+        {/*
         <nav className="flex space-x-1" aria-label="Tabs">
           {['cpp', 'java', 'py'].map((tab: Language) => (
             <button
@@ -116,6 +117,7 @@ export const EditorTopNav = (): JSX.Element => {
             </button>
           ))}
         </nav>
+         */}
 
         <div className="mx-4 block border-l border-gray-200 dark:border-gray-700 h-6 self-center" />
 
@@ -126,7 +128,7 @@ export const EditorTopNav = (): JSX.Element => {
           className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-gray-200 inline-flex items-center space-x-2 font-medium text-sm group transition"
         >
           <InformationCircleIcon className="h-6 w-6 text-gray-400 group-hover:text-gray-500 dark:group-hover:text-gray-300 transition" />
-          <span>Documentation</span>
+          <span>Документация</span>
         </a>
 
         <div className="mx-4 block border-l border-gray-200 dark:border-gray-700 h-6 self-center" />

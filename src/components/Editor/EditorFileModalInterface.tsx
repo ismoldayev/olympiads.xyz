@@ -46,7 +46,7 @@ const FileSearch = ({ hits, currentRefinement, refine, onSelect }) => {
       <div className="flex items-center p-2">
         <input
           type="search"
-          placeholder="Search"
+          placeholder="Търсене"
           className="focus:outline-none focus:ring-0 text-gray-700 dark:bg-dark-surface dark:text-gray-200 dark:placeholder-gray-400 border-0 flex-1"
           value={currentRefinement}
           onChange={e => refine(e.target.value)}
@@ -74,7 +74,7 @@ const FileSearch = ({ hits, currentRefinement, refine, onSelect }) => {
                   <SearchResultDescription className="text-gray-700 dark:text-gray-400 text-sm">
                     <Highlight hit={hit} attribute="id" /> -{' '}
                     {hit.path == null ? (
-                      'Create New Internal Solution'
+                      'Създай ново решение'
                     ) : (
                       <Highlight hit={hit} attribute="path" />
                     )}
