@@ -5,7 +5,9 @@ import DashboardCard from './DashboardCard';
 
 type ActiveItemStatus =
   | 'Прескочен'
+  | 'Прескочена'
   | 'Игнориран'
+  | 'Игнорирана'
   | 'Чета' // only for modules
   | 'Упражнявам' // only for modules
   | 'Решавам' // only for problems
@@ -19,7 +21,9 @@ export type ActiveItem = {
 
 const statusClasses: { [key in ActiveItemStatus]: string } = {
   Прескочен: difficultyClasses.Normal,
+  Прескочена: difficultyClasses.Normal,
   Игнориран: 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100',
+  Игнорирана: 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100',
   Чета: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-800 dark:text-yellow-100',
   Упражнявам: difficultyClasses.Лесна,
   Решавам:
@@ -47,7 +51,9 @@ export default function ActiveItems({
       Решавам: 1,
       Упражнявам: 1,
       Прескочен: 2,
+      Прескочена: 2,
       Игнориран: 3,
+      Игнорирана: 3,
     };
     const astatus = statusVal[a.status];
     const bstatus = statusVal[b.status];
