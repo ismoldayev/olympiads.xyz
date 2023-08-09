@@ -37,13 +37,16 @@ const SearchResultsContainer = styled.div`
     ${tw`text-dark-high-emphasis!`}
   }
 `;
-
+const indexName = 'prod_modules';
+{
+  /*
 const indexName = process.env.GATSBY_NODE_ENV
   ? process.env.GATSBY_NODE_ENV === 'production'
     ? 'prod_modules'
     : 'dev_modules'
   : 'default_modules';
-
+ */
+}
 const ModuleSearch = ({ hits, currentRefinement, refine }) => {
   return (
     <div>
