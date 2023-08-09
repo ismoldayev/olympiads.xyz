@@ -124,7 +124,7 @@ export default function TopNavigationBar({
       key: 'mechanics',
     },
     {
-      name: 'Електромагнетизъм',
+      name: 'Електричество и магнетизъм',
       href: '/electromagnetism',
       icon: LightningBoltIcon,
       key: 'electromagnetism',
