@@ -234,7 +234,7 @@ const ModuleLink = ({ link }: { link: ModuleLinkInfo }): JSX.Element => {
                 <Tooltip
                   content={
                     link.isIncomplete
-                      ? 'This module has incomplete sections.'
+                      ? 'Този модул има недовършени секции.'
                       : `This module is missing sections in your language (${LANGUAGE_LABELS[userLang]}).`
                   }
                 >

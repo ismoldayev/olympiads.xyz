@@ -100,13 +100,13 @@ export const ProblemsetsFeature = (): JSX.Element => {
                     <TableRow
                       source="USACO Thermodynamics"
                       title="Mootube"
-                      difficulty="Normal"
+                      difficulty="Нормална"
                       starred
                     />
                     <TableRow
                       source="Baltic OI"
                       title="2016 - Park"
-                      difficulty="Hard"
+                      difficulty="Трудна"
                       className="bg-gray-50 dark:bg-gray-900"
                     />
                   </tbody>

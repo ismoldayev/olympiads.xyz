@@ -42,7 +42,7 @@
         "difficulty": {
           "description": "The difficulty of a problem, _relative to the module it is in_.",
           "type": "string",
-          "enum": ["Много лесна", "Лесна", "Normal", "Hard", "Very Hard", "Insane"]
+          "enum": ["Много лесна", "Лесна", "Нормална", "Hard", "Много трудна", "Невъзможна"]
         },
         "isStarred": {
           "description": "Whether or not the problem should be starred in the module problem table.",

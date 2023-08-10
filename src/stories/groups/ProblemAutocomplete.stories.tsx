@@ -82,7 +82,7 @@ const mockHits = [
     source: 'YS',
     tags: ['HLD', 'SegTree'],
     url: 'https://judge.yosupo.jp/problem/vertex_set_path_composite',
-    difficulty: 'Normal',
+    difficulty: 'Нормална',
     isStarred: false,
     solution: {
       kind: 'sketch',
@@ -120,7 +120,7 @@ const mockHits = [
         matchLevel: 'none',
       },
       difficulty: {
-        value: 'Normal',
+        value: 'Нормална',
         matchLevel: 'none',
       },
       solution: {

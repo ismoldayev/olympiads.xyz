@@ -6,3 +6,118 @@ description: 'Как да добавяте собствени решения.'
 prerequisites:
   - contributing
 ---
+
+<IncompleteSection>
+
+- Този модул трябва да бъде пренаписан за работа със задачи по физика.
+
+</IncompleteSection>
+Вижте [Работа с MDX](/general/working-mdx) за допълнителна информация.
+
+## Стъпки
+
+1. [Fork-нете](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop) хранилището в GitHub.
+
+2. Ако добавяте решение на задача в рамките на модул, не създавайте нов файл. Ако добавяте вътрешно решение, създайте нов mdx файл в `solutions/<section>/`, ако още не съществува, включително frontmatter. Използвайте [`solutions/silver/usaco-690.mdx`](https://github.com/cpinitiative/usaco-guide/blob/master/solutions/silver/usaco-690.mdx)<Asterisk>Трябва да бъде заменен с пример по физика</Asterisk> като пример:
+    ```
+    ---
+    id: usaco-690
+    source: USACO Silver 2017 January
+    title: Cow Dance Show
+    author: (add your name here)
+    ---
+
+    [Official Analysis](http://www.usaco.org/current/data/sol_cowdance_silver_jan17.html)
+
+    ## Explanation
+
+    (add explanation here ...)
+
+    Use `\texttt{}` around variable names with length *greater than one*, like so. Place long equations on separate lines with display math, and use `\cdot` instead of `*` to denote multiplication.
+
+    $$
+    \texttt{arr}[i]=2\cdot (a+b+c+d+e)+\sum_{j=0}^{i-1}\texttt{arr}[j]
+    $$
+
+    Some additional text styles which you might consider using:
+
+    http://latexref.xyz/Font-styles.html
+
+    http://applied-r.com/latex-font-styles/
+
+    $func(var)$
+
+    $\textit{func(var)}$
+
+    $\textrm{func(var)}$
+
+    $\text{func(var)}$
+
+    $\textsf{func(var)}$
+
+    $\textbf{func(var)}$
+
+    $\texttt{func(var)}$
+
+    ## Implementation
+
+    **Time Complexity:** $\mathcal{O}(N\log^2N)$
+
+    ^ Format time complexity like this. Should appear outside of `<LanguageSection>` if it's the same for all implementations.
+
+    If you need to link to a module, format your link like [this](/silver/binary-search) instead of [this](https://usaco.guide/silver/binary-search).
+
+    <LanguageSection>
+
+    <CPPSection>
+
+    (add cpp code)
+
+    </CPPSection>
+
+    <PySection>
+
+    (if you have Python code)
+
+    </PySection>
+
+    <JavaSection>
+
+    (if you have Java code)
+
+    </JavaSection>
+
+    </LanguageSection>
+    ```
+	Поддържайте постояни имената на файлове и ID на решения. По-специално, ID на
+	задача от USACO (като тази по-горе) е числото в самия край на
+	URL адреса на [usaco.org](http://www.usaco.org/index.php?page=viewproblem2&cpid=690).
+	Името на файл с решение трябва да съответства на ID на решението, което съдържа. Вижте
+	[Работа с MDX](/general/working-mdx#problem-lists) за още примери за идентификатори.
+
+3. Във файла `.problems.json` на модула (в този случай,
+	[`Binary_Search.problems.json`](https://github.com/cpinitiative/usaco-guide/blob/master/content/3_Silver/Binary_Search.problems.json)),
+	задайте `solutionMetadata` на `{ "kind": "internal" }`. Също така добавете
+	тагове (ако искате). Ако задачата не е в модул, можете да добавите задачата в
+     [`extraProblems.json`](https://github.com/cpinitiative/usaco-guide/blob/master/content/extraProblems.json).
+
+     ```
+    {
+      "uniqueId": "usaco-690",
+      "name": "Cow Dance Show",
+      "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=690",
+      "source": "Silver",
+      "difficulty": "Easy",
+      "isStarred": false,
+      "tags": ["Binary Search", "Sorted Set"],
+      "solutionMetadata": {
+        "kind": "internal"
+      }
+    },
+    ```
+
+4. Проверете дали и модулът, и решението се изобразяват правилно, като използвате
+     [редактора на живо](/editor/) преди да изпратите
+     [pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
+
+

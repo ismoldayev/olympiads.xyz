@@ -7,8 +7,8 @@ export const IncompleteSection = ({
   children?: React.ReactNode;
 }): JSX.Element => {
   return (
-    <Danger title="This section is not complete.">
-      Any help would be appreciated! Just submit a Pull Request on{' '}
+    <Danger title="Тази секция не е довършена.">
+      Всякаква помощ ще бъде оценена! Просто изпратете Pull Request на{' '}
       <a
         href="https://github.com/ismoldayev/olympiads.xyz"
         target="_blank"

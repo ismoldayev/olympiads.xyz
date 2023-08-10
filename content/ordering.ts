@@ -35,7 +35,7 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
     {
       name: 'Състезателни ресурси',
       description: 'Полезно за всички състезатели',
-      items: ['olympiads'],
+      items: ['olympiads', 'resources-comp-physics'],
     },
     {
       name: 'Подготвителни планове',

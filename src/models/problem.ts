@@ -545,17 +545,17 @@ export const PROBLEM_PROGRESS_OPTIONS: ProblemProgress[] = [
 export type ProblemDifficulty =
   | 'Много лесна'
   | 'Лесна'
-  | 'Normal'
-  | 'Hard'
-  | 'Very Hard'
-  | 'Insane';
+  | 'Нормална'
+  | 'Трудна'
+  | 'Много трудна'
+  | 'Невъзможна';
 export const PROBLEM_DIFFICULTY_OPTIONS: ProblemDifficulty[] = [
   'Много лесна',
   'Лесна',
-  'Normal',
-  'Hard',
-  'Very Hard',
-  'Insane',
+  'Нормална',
+  'Трудна',
+  'Много трудна',
+  'Невъзможна',
 ];
 
 export type ProblemFeedback = {

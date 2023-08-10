@@ -20,15 +20,15 @@ export type ActiveItem = {
 };
 
 const statusClasses: { [key in ActiveItemStatus]: string } = {
-  Прескочен: difficultyClasses.Normal,
-  Прескочена: difficultyClasses.Normal,
+  Прескочен: difficultyClasses.Нормална,
+  Прескочена: difficultyClasses.Нормална,
   Игнориран: 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100',
   Игнорирана: 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100',
   Чета: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-800 dark:text-yellow-100',
   Упражнявам: difficultyClasses.Лесна,
   Решавам:
     'bg-yellow-100 text-yellow-800 dark:bg-yellow-800 dark:text-yellow-100',
-  Преглеждам: difficultyClasses.Insane,
+  Преглеждам: difficultyClasses.Невъзможна,
 };
 
 export default function ActiveItems({
